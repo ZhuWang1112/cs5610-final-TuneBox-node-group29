@@ -8,11 +8,4 @@ const commentSchema = new Mongoose.Schema({
     content: { type: String, required: true },
 },{collection: "comments"});
 
-userSchema.method.generateAuthToken = function () {
-    // return token
-    return jwt.sign(
-        {_id: this._id, name: this.name, isAdmin: this.isAdmin},
-        process.env.JWTPRIVATEKEY,
-        {expiresIn: "7d"});
-}
  export default commentSchema;
