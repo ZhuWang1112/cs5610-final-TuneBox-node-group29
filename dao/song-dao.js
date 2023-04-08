@@ -1,4 +1,4 @@
-import songModel from "./models/song-model";
+import songModel from "./models/song-model.js";
 
 export const findSongs = (page, limit) => {
     const skipIndex = (page - 1) * limit;
