@@ -1,5 +1,6 @@
 {
-  "name": "module",
+  "type": "module",
+  "name": "TuneBox-node-group29",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

@@ -1,4 +1,4 @@
-import userModel from "./models/user-model";
+import userModel from "./models/user-model.js";
 
 // paginate query
 export const findUsers = (page, limit) => {
@@ -6,7 +6,7 @@ export const findUsers = (page, limit) => {
     return userModel.find().skip(skipIndex).limit(limit);
 }
 export const findUserbyName = (userName) => userModel.findOne({username: userName});
-
+export const findAllUsers = () => userModel.find();
 export const createUser = (user) => userModel.create(user);
 export const deleteUser = (userId) => userModel.deleteOne({_id: userId});
 export const updateUser = (userId, user) => userModel.updateOne({_id: userId}, {$set: user});
