@@ -2,16 +2,21 @@ import * as likeDao from "../dao/like-dao.js";
 import * as playlistDao from "../dao/playlist-dao.js";
 import mongoose from "mongoose";
 
+// When a new user register, add one more record with empty likedList in the likedSongs db
 const createEmptyLikedList = async (req, res) => {
     const newLikedObject = {user: req.params.uid, likedSongs: []}
     const likedObject = await likeDao.createLikedSongsList(newLikedObject);
     res.json(likedObject);
 }
+
+// Get an array of likedSongs id by userId
 const findLikedSongsByUser = async (req, res) => {
     const likedObject = await likeDao.findLikedSongsByUser(req.params.uid);
     res.json(likedObject);
 }
-export const handleLikeSong = async (req, res) => {
+
+// Add/delete the song to/from playlist and likedSongs schema
+const handleLikeSong = async (req, res) => {
     const user = req.params.uid;
     let likedObj = await likeDao.findLikedSongsByUser(user);
     const newId = req.body.songId;

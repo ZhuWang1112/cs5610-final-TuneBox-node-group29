@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 
-const userSchema = new mongoose.Schema({
+const userSchema = new mongoose.Schema(
+  {
     userName: { type: String, required: true },
     email: { type: String, required: true },
     password: { type: String, required: true },
@@ -8,7 +9,9 @@ const userSchema = new mongoose.Schema({
     isAdmin: { type: Boolean, default: false },
     isVip: { type: Boolean, default: false },
     playlistsCount: { type: Number, default: 0 },
-}, { collection: "users" });
+  },
+  { collection: "users" }
+);
 
 userSchema.method.generateAuthToken = function () {
     // return token
