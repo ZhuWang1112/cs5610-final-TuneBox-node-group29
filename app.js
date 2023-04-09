@@ -6,6 +6,8 @@ import PlaylistController from "./controllers/playlist-controller.js";
 import UserController from "./controllers/user-controller.js";
 import FollowController from "./controllers/follow-controller.js";
 import CommentController from "./controllers/comment-controller.js";
+import LikedSongsController from "./controllers/like-controller.js";
+import SongController from "./controllers/song-controller.js";
 const app = express();
 
 app.use(cors());
@@ -21,4 +23,6 @@ PlaylistController(app);
 UserController(app);
 FollowController(app);
 CommentController(app);
+LikedSongsController(app);
+SongController(app);
 app.listen(process.env.PORT || 4000)
