@@ -1,4 +1,5 @@
 import * as playlistDao from "../dao/playlist-dao.js"
+import * as songDao from "../dao/song-dao.js";
 
 // create a playlist
 const createPlaylist = async(req, res) => {
@@ -7,7 +8,7 @@ const createPlaylist = async(req, res) => {
     res.json(insertedPlaylist);
 }
 // get all playlists of one user
-const findPlaylist = async (req, res) => {
+const findPlaylistByUser = async (req, res) => {
     const user = req.params.user;
     const playlists = await playlistDao.findPlayListsByUserId(user);
     res.json(playlists);
@@ -20,8 +21,16 @@ const deletePlaylist = async (req, res) => {
     res.json(status);
 }
 
+const findSongsByPlaylistId = async (req, res) => {
+    const playlist = await playlistDao.findPlaylistById(req.params.pid);
+    const songList = playlist.songs;
+    const songs = await songDao.findSongByIds(songList);
+    res.json(songs);
+}
+
 export default (app) => {
-    app.get('/api/playlists/:user', findPlaylist);
+    app.get('/api/playlists/:user', findPlaylistByUser);
     app.delete('/api/playlists/:pid', deletePlaylist);
     app.post('/api/playlists', createPlaylist);
+    app.get('/api/playlists/songs/:pid', findSongsByPlaylistId);
 }
