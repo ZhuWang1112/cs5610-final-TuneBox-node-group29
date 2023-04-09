@@ -7,6 +7,13 @@ const createPlaylist = async(req, res) => {
     const insertedPlaylist = await playlistDao.createPlaylist(newPlaylist);
     res.json(insertedPlaylist);
 }
+
+// get all playlists
+const findPlaylists = async (req, res) => {
+    const playlists = await playlistDao.findAllPlaylists();
+    res.json(playlists);
+}
+
 // get all playlists of one user
 const findPlaylistByUser = async (req, res) => {
     const user = req.params.user;
@@ -29,9 +36,18 @@ const findSongsByPlaylistId = async (req, res) => {
     res.json(songs);
 }
 
+// update playlist by id
+const updatePlaylist = async (req, res) => {
+  const newPlaylist = req.body;
+  const status = await playlistDao.updatePlaylist(newPlaylist);
+  res.json(status);
+};
+
 export default (app) => {
-    app.get('/api/playlists/:user', findPlaylistByUser);
-    app.delete('/api/playlists/:pid', deletePlaylist);
-    app.post('/api/playlists', createPlaylist);
-    app.get('/api/playlists/songs/:pid', findSongsByPlaylistId);
-}
+  app.get("/api/playlists", findPlaylists);
+  app.get("/api/playlists/:user", findPlaylistByUser);
+  app.delete("/api/playlists/:pid", deletePlaylist);
+  app.post("/api/playlists", createPlaylist);
+  app.get("/api/playlists/songs/:pid", findSongsByPlaylistId);
+  app.put("/api/playlists/:pid", updatePlaylist);
+};
