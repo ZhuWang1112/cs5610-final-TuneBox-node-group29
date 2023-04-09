@@ -7,6 +7,7 @@ export const findPlayListsByUserId = (userId) =>
 export const findPlaylistByIds = (ids) =>
   playlistModel.find({ _id: { $in: ids } });
 export const findPlaylistById = (id) => playlistModel.findOne({ _id: id });
+export const findAllPlaylists = () => playlistModel.find();
 export const deletePlaylist = (pid) => playlistModel.deleteOne({ _id: pid });
 export const createPlaylist = (playlist) => playlistModel.create(playlist);
 export const updatePlaylist = (playlist) =>
