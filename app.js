@@ -5,6 +5,7 @@ import mongoose from "mongoose";
 import PlaylistController from "./controllers/playlist-controller.js";
 import UserController from "./controllers/user-controller.js";
 import FollowController from "./controllers/follow-controller.js";
+import CommentController from "./controllers/comment-controller.js";
 const app = express();
 
 app.use(cors());
@@ -19,4 +20,5 @@ app.get('/hello', (req, res) => {res.send('Hello World!')})
 PlaylistController(app);
 UserController(app);
 FollowController(app);
+CommentController(app);
 app.listen(process.env.PORT || 4000)
