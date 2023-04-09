@@ -1,1 +1,0 @@
-export const DB_CONNECTION_STRING = "mongodb+srv://group29:supersecretpassword@group29tuneboxmongodbcl.amofes5.mongodb.net/?retryWrites=true&w=majority"
