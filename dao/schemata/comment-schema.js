@@ -1,10 +1,8 @@
-import {Mongoose} from "mongoose";
-import userSchema from "./user-schema";
-import jwt from "jsonwebtoken";
+import mongoose from "mongoose";
 
-const commentSchema = new Mongoose.Schema({
-    playlist: { type: Mongoose.Schema.Types.ObjectId, ref: "playlist", required: true },
-    user: { type: Mongoose.Schema.Types.ObjectId, ref: "user", required: true },
+const commentSchema = new mongoose.Schema({
+    playlist: { type: mongoose.Schema.Types.ObjectId, ref: "playlist", required: true },
+    user: { type: mongoose.Schema.Types.ObjectId, ref: "user", required: true },
     content: { type: String, required: true },
 },{collection: "comments"});
 
