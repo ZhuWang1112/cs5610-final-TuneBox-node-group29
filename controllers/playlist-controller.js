@@ -21,6 +21,7 @@ const deletePlaylist = async (req, res) => {
     res.json(status);
 }
 
+// find a list of song objects by playlistId
 const findSongsByPlaylistId = async (req, res) => {
     const playlist = await playlistDao.findPlaylistById(req.params.pid);
     const songList = playlist.songs;
