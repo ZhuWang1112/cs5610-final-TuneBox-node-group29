@@ -56,7 +56,7 @@ const deletePlaylist = async (req, res) => {
   );
 
   const defaultPlaylist = playlists[defaultIdx];
-  defaultPlaylist.songs = [...defaultPlaylist.songs, playlistToDelete.songs];
+  defaultPlaylist.songs = [...defaultPlaylist.songs, ...playlistToDelete.songs];
   playlists = [
     ...playlists.slice(0, defaultIdx),
     defaultPlaylist,
