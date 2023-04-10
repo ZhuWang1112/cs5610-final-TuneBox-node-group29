@@ -75,10 +75,14 @@ const updatePlaylist = async (req, res) => {
   const status = await playlistDao.updatePlaylist(newPlaylist);
   res.json(status);
 };
+
+// Return the total number of playlists
 const countPlaylists = async (req, res) => {
     const count = await playlistDao.countPlaylists();
     res.json(count);
 }
+
+// Return the latest registered user information
 const findLastPageUsers = async (req, res) => {
     const limit = parseInt(req.query.limit, 10);
     const lastPage = await playlistDao.findLastPageUsers(limit);

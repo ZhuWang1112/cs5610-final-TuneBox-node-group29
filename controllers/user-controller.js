@@ -12,8 +12,14 @@ const findUserById = async (req, res) => {
     res.json(user);
 }
 
+// find user objects by partial name
+const findUserByPartialName = async (req, res) => {
+    const user = await userDao.findUserByPartialName(req.params.username);
+    res.json(user);
+}
+
 const findUserByName = async (req, res) => {
-    const user = await userDao.findUserbyName(req.params.username);
+    const user = await userDao.findUserByName(req.params.username);
     res.json(user);
 }
 
@@ -68,6 +74,7 @@ export default (app) => {
     app.put('/api/users/admin/:_id', updateUserById);
     app.delete('/api/users/admin/:_id', deleteUserById);
     app.get('/api/users/admin/name/:username', findUserByName);
+    app.get('/api/users/admin/partialname/:username', findUserByPartialName);
     app.get('/api/users/admin/pagination', findUsersPagination);
     app.get('/api/users/admin/count', countUsers);
     app.get('/api/users/admin/vip/count', countVipUsers);

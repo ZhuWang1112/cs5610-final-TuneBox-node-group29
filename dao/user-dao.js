@@ -12,7 +12,9 @@ export const findLastPageUsers = async (limit) => {
     const lastPage = Math.ceil(totalUsers / limit);
     return findUsersPagination(lastPage, limit);
 }
-export const findUserbyName = (userName) =>
+export const findUserByPartialName = (userName) =>
+    userModel.find({ userName: { $regex: userName, $options: "i" } });
+export const findUserByName = (userName) =>
   userModel.findOne({ userName: userName });
 export const findUserById = (id) => userModel.findOne({ _id: id });
 export const findUserByIds = (ids) => userModel.find({ _id: { $in: ids } });
