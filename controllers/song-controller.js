@@ -2,7 +2,6 @@ import * as songDao from "../dao/song-dao.js"
 
 // find a song object by id
 const findSongByIds = async (req, res) => {
-  console.log("song request body: ", req.query);
   const songList = req.body.songlist;
   const songs = await songDao.findSongByIds(songList);
   res.json(songs);
