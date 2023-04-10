@@ -8,8 +8,12 @@ import FollowController from "./controllers/follow-controller.js";
 import CommentController from "./controllers/comment-controller.js";
 import LikedSongsController from "./controllers/like-controller.js";
 import SongController from "./controllers/song-controller.js";
+import morgan from "morgan";
+
 const app = express();
 
+// log requests
+app.use(morgan("dev"));
 app.use(cors());
 app.use(express.json());
 dotenv.config();
