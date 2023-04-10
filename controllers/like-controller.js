@@ -35,16 +35,22 @@ const handleLikeSong = async (req, res) => {
     likedList.push(newObjOId);
     // insert the song to playlist
     songList.push(newObjOId);
+    console.log("Added");
+    console.log("Songlist: ", songList);
+    console.log("likedList: ", likedList);
   } else {
     likedList.splice(index, 1);
     //remove the song from playlist
     const idInSong = songList.indexOf(newId);
     songList.splice(idInSong, 1);
+    console.log("Deleted");
   }
   const newPlaylist = { _id: playlists._id, songs: songList };
+  console.log("new playlist: ", newPlaylist);
   await playlistDao.updatePlaylist(newPlaylist);
 
   const newLikeObj = { ...likedList, likedSongs: likedList };
+  console.log("newLikeObj: ", newLikeObj);
   await likeDao.updateLikedSongs(user, newLikeObj);
 
   const songObjs = await songDao.findSongByIds(songList);

@@ -42,8 +42,31 @@ const findSongsByPlaylistId = async (req, res) => {
 // delete playlist according to _id field in playlist records
 const deletePlaylist = async (req, res) => {
   const playlistIdToDelete = req.params.pid;
+  const playlistToDelete = await playlistDao.findPlaylistById(
+    playlistIdToDelete
+  );
+  const user = playlistToDelete.user;
+  // move all songs to default playlist
+  // get default playlist
+  let playlists = await playlistDao.findPlayListsByUserId(user);
+
+  const defaultIdx = playlists.findIndex((p) => p.isDefault === true);
+  const deletedIdx = playlists.findIndex(
+    (p) => p._id.toString() === playlistIdToDelete
+  );
+
+  const defaultPlaylist = playlists[defaultIdx];
+  defaultPlaylist.songs = [...defaultPlaylist.songs, ...playlistToDelete.songs];
+  playlists = [
+    ...playlists.slice(0, defaultIdx),
+    defaultPlaylist,
+    ...playlists.slice(defaultIdx + 1),
+  ];
+  playlists.splice(deletedIdx, 1);
+
+  await playlistDao.updatePlaylist(defaultPlaylist);
   const status = await playlistDao.deletePlaylist(playlistIdToDelete);
-  res.json(status);
+  res.json(playlists);
 };
 
 // update playlist by id
@@ -62,11 +85,19 @@ const findLastPageUsers = async (req, res) => {
     res.json(lastPage);
 }
 
+const findDefaultPlaylistByUser = async (req, res) => {
+  const uid = req.params.uid;
+  const playlists = await playlistDao.findPlayListsByUserId(uid);
+  const defaultPlaylist = playlists.filter((p) => p.isDefault === true)[0];
+  res.json(defaultPlaylist);
+};
+
 export default (app) => {
   app.get("/api/playlists", findPlaylists);
   app.get("/api/playlists/:user", findPlaylistByUser);
   app.get("/api/playlists/details/:pid", findPlaylistDetailsById);
   app.get("/api/playlists/songs/:pid", findSongsByPlaylistId);
+  app.get("/api/playlists/default/:uid", findDefaultPlaylistByUser);
   app.delete("/api/playlists/:pid", deletePlaylist);
   app.post("/api/playlists", createPlaylist);
   app.put("/api/playlists/:pid", updatePlaylist);
