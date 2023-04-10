@@ -52,6 +52,15 @@ const updatePlaylist = async (req, res) => {
   const status = await playlistDao.updatePlaylist(newPlaylist);
   res.json(status);
 };
+const countPlaylists = async (req, res) => {
+    const count = await playlistDao.countPlaylists();
+    res.json(count);
+}
+const findLastPageUsers = async (req, res) => {
+    const limit = parseInt(req.query.limit, 10);
+    const lastPage = await playlistDao.findLastPageUsers(limit);
+    res.json(lastPage);
+}
 
 export default (app) => {
   app.get("/api/playlists", findPlaylists);
@@ -61,4 +70,6 @@ export default (app) => {
   app.delete("/api/playlists/:pid", deletePlaylist);
   app.post("/api/playlists", createPlaylist);
   app.put("/api/playlists/:pid", updatePlaylist);
+  app.get("/api/playlists/admin/count", countPlaylists);
+  app.get("/api/playlists/admin/lastpage", findLastPageUsers);
 };
