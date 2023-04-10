@@ -29,6 +29,7 @@ const handleFollow = async (req, res) => {
     console.log("after delete: ", followList);
   }
   const followObjects = await userDao.findUserByIds(followList);
+  console.log("followObjects: ", followObjects);
   const newFollowObj = {
     _id: followObj[0]._id,
     user: followObj[0].user,
@@ -42,7 +43,6 @@ const handleFollow = async (req, res) => {
 const findFollowList = async (req, res) => {
   const user = req.params.user;
   const followList = await followDao.findFollows(user);
-  //   console.log("followList", followList);
   res.json(followList);
 };
 
@@ -67,17 +67,16 @@ const checkFolloweeList = async (req, res) => {
   const followListTarget = followObjTarget[0].followeeList;
   console.log("followListTarget", followListTarget);
   const followObjectsTarget = await userDao.findUserByIds(followListTarget);
-
+  console.log("followObjectsTarget", followObjectsTarget);
   // get the followeelist of loginUser
   const followObjLogin = await followDao.findFollows(loginUser);
   const followListLogin = followObjLogin[0].followeeList;
   console.log("followListLogin", followListLogin);
   //   console.log("followList: ", followList);
-  const exist = followListTarget.map((id) => {
-    const index = followListLogin.indexOf(id);
+  const exist = followObjectsTarget.map((obj, id) => {
+    const index = followListLogin.indexOf(obj._id);
     return index === -1 ? false : true;
   });
-
   res.json({
     followeeList: followObjectsTarget,
     checkFollowee: exist,
