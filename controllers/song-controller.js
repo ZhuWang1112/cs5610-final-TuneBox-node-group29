@@ -1,19 +1,21 @@
 import * as songDao from "../dao/song-dao.js"
 
 // find a song object by id
-const findSongById = async (req, res) => {
-    const song = await songDao.findSongById(req.params.sid);
-    res.json(song);
-}
+const findSongByIds = async (req, res) => {
+  console.log("song request body: ", req.query);
+  const songList = req.body.songlist;
+  const songs = await songDao.findSongByIds(songList);
+  res.json(songs);
+};
 
 // create a song object
-const createSong = async(req, res) => {
-    const newSong = req.body;
-    const insertedSong = await songDao.createSong(newSong);
-    res.json(insertedSong);
-}
+const createSong = async (req, res) => {
+  const newSong = req.body;
+  const insertedSong = await songDao.createSong(newSong);
+  res.json(insertedSong);
+};
 
 export default (app) => {
-    app.get('/api/songs/:sid', findSongById);
-    app.post('/api/songs', createSong);
-}
+  app.get("/api/songs", findSongByIds);
+  app.post("/api/songs", createSong);
+};

@@ -16,25 +16,35 @@ const findPlaylists = async (req, res) => {
 
 // get all playlists of one user
 const findPlaylistByUser = async (req, res) => {
-    const user = req.params.user;
-    const playlists = await playlistDao.findPlayListsByUserId(user);
-    res.json(playlists);
-}
+  const user = req.params.user;
+  const playlists = await playlistDao.findPlayListsByUserId(user);
+  console.log(playlists);
+  res.json(playlists);
+};
+
+// find details in a playlist by id
+const findPlaylistDetailsById = async (req, res) => {
+  const playlist = await playlistDao.findPlaylistById(req.params.pid);
+  console.log(playlist);
+  const songList = playlist.songs;
+  const songs = await songDao.findSongByIds(songList);
+  playlist.songs = songs;
+  res.json(playlist);
+};
+
+const findSongsByPlaylistId = async (req, res) => {
+  const playlist = await playlistDao.findPlaylistById(req.params.pid);
+  const songList = playlist.songs;
+  const songs = await songDao.findSongByIds(songList);
+  res.json(songs);
+};
 
 // delete playlist according to _id field in playlist records
 const deletePlaylist = async (req, res) => {
-    const playlistIdToDelete = req.params.pid;
-    const status = await playlistDao.deletePlaylist(playlistIdToDelete);
-    res.json(status);
-}
-
-// find a list of song objects by playlistId
-const findSongsByPlaylistId = async (req, res) => {
-    const playlist = await playlistDao.findPlaylistById(req.params.pid);
-    const songList = playlist.songs;
-    const songs = await songDao.findSongByIds(songList);
-    res.json(songs);
-}
+  const playlistIdToDelete = req.params.pid;
+  const status = await playlistDao.deletePlaylist(playlistIdToDelete);
+  res.json(status);
+};
 
 // update playlist by id
 const updatePlaylist = async (req, res) => {
@@ -46,8 +56,9 @@ const updatePlaylist = async (req, res) => {
 export default (app) => {
   app.get("/api/playlists", findPlaylists);
   app.get("/api/playlists/:user", findPlaylistByUser);
+  app.get("/api/playlists/details/:pid", findPlaylistDetailsById);
+  app.get("/api/playlists/songs/:pid", findSongsByPlaylistId);
   app.delete("/api/playlists/:pid", deletePlaylist);
   app.post("/api/playlists", createPlaylist);
-  app.get("/api/playlists/songs/:pid", findSongsByPlaylistId);
   app.put("/api/playlists/:pid", updatePlaylist);
 };
