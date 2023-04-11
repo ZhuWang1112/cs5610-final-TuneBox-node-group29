@@ -5,11 +5,16 @@ const userSchema = new mongoose.Schema(
     userName: { type: String, required: true },
     email: { type: String, required: true },
     password: { type: String, required: true },
-      // validate
-    gender: { type: String, required: true, enum: ['male', 'female', 'non-binary']},
+    // validate
+    gender: {
+      type: String,
+      required: true,
+      enum: ["male", "female", "non-binary"],
+    },
     isAdmin: { type: Boolean, default: false },
     isVip: { type: Boolean, default: false },
     playlistsCount: { type: Number, default: 1 },
+    img: { type: String, default: "/images/profile-avatar.jpeg" },
     createTime: { type: Date, default: Date.now },
       isDeleted: { type: Boolean, default: false },
     // playlists: [{ type: mongoose.Schema.Types.ObjectId, ref: "playlist" }],
