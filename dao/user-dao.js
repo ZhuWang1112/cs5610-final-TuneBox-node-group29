@@ -1,12 +1,21 @@
 import userModel from "./models/user-model.js";
 
 // paginate query
-export const findUsers = (page, limit) => {
+export const findUsersPagination = (page, limit) => {
     const skipIndex = (page - 1) * limit;
+    // console.log(page);
+    // console.log(limit);
     return userModel.find().skip(skipIndex).limit(limit);
 }
-export const findUserbyName = (userName) =>
-  userModel.findOne({ username: userName });
+export const findLastPageUsers = async (limit) => {
+    const totalUsers = await userModel.count();
+    const lastPage = Math.ceil(totalUsers / limit);
+    return findUsersPagination(lastPage, limit);
+}
+export const findUserByPartialName = (userName) =>
+    userModel.find({ userName: { $regex: userName, $options: "i" } });
+export const findUserByName = (userName) =>
+  userModel.findOne({ userName: userName });
 export const findUserById = (id) => userModel.findOne({ _id: id });
 export const findUserByIds = (ids) => userModel.find({ _id: { $in: ids } });
 export const findUserByUsername = async (userName) => {
@@ -25,5 +34,12 @@ export const createUser = async (user) => {
     return newUser;
 };
 export const deleteUser = (userId) => userModel.deleteOne({ _id: userId });
-export const updateUser = (userId, user) =>
-  userModel.updateOne({ _id: userId }, { $set: user });
+export const countUsers = () => userModel.countDocuments({isDeleted: false});
+export const updateUser = async (userId, user) => {
+    await userModel.updateOne({ _id: userId }, { $set: user });
+    const updatedUser = await userModel.findOne({ _id: userId });
+    return updatedUser;
+};
+export const countVipUsers = () => userModel.countDocuments({ isVip: true, isDeleted: false });
+export const countFemaleUsers = () => userModel.countDocuments({ gender: "female", isDeleted: false });
+export const countMaleUsers = () => userModel.countDocuments({gender: "male", isDeleted: false });

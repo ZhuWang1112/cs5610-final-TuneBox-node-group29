@@ -12,14 +12,13 @@ const UserController = (app) => {
         const user = await userDao.findUserById(req.params._id);
         res.json(user);
     }
+
     const deleteUserById = async (req, res) => {
-        const id = req.params.id;
-        // const user = users.find((user) => user.id === id);
-        // const index = users.indexOf(user);
-        // users.splice(index, 1);
-        const status = await userDao.deleteUser(id);
+        const userIdToDelete = req.params._id;
+        const status = await userDao.deleteUser(userIdToDelete);
         res.json(status);
-    };
+    }
+
     const createUser = async (req, res) => {
         // const user = req.body;
         // users.push({ ...user, id: new Date().getTime() });
@@ -58,6 +57,59 @@ const UserController = (app) => {
         res.json(newUser);
     };
 
+    // find user objects by partial name
+    const findUserByPartialName = async (req, res) => {
+        const user = await userDao.findUserByPartialName(req.params.username);
+        res.json(user);
+    }
+
+    const findUserByName = async (req, res) => {
+        const user = await userDao.findUserByName(req.params.username);
+        res.json(user);
+    }
+
+    const findUsersPagination = async (req, res) => {
+        const page = parseInt(req.query.page, 10);
+        const limit = parseInt(req.query.limit, 10);
+        const users = await userDao.findUsersPagination(page, limit);
+        res.json(users);
+    }
+
+    const updateUserById = async (req, res) => {
+        const user = req.body;
+        const userIdToUpdate = req.params._id;
+        const updatedUser = await userDao.updateUser(userIdToUpdate, user);
+        res.json(updatedUser);
+    }
+
+
+
+    const countUsers = async (req, res) => {
+        const count = await userDao.countUsers();
+        res.json(count);
+    }
+
+    const countVipUsers = async (req, res) => {
+        const count = await userDao.countVipUsers();
+        res.json(count);
+    }
+    const countFemaleUsers = async (req, res) => {
+        const count = await userDao.countFemaleUsers();
+        res.json(count);
+    }
+
+    const countMaleUsers = async (req, res) => {
+        const count = await userDao.countMaleUsers();
+        res.json(count);
+    }
+
+    const findLastPageUsers = async (req, res) => {
+        const limit = parseInt(req.query.limit, 10);
+        const users = await userDao.findLastPageUsers(limit);
+        res.json(users);
+    }
+
+
     app.get('/api/users', findUsers);
     app.get('/api/users/:_id', findUserById);
 
@@ -66,9 +118,19 @@ const UserController = (app) => {
     app.post("/api/users/register", register);
     app.post("/api/users", createUser);
 
-    app.delete("/api/users/:id", deleteUserById);
 
-
+    app.put('/api/users/admin/:_id', updateUserById);
+    app.delete('/api/users/admin/:_id', deleteUserById);
+    app.get('/api/users/admin/name/:username', findUserByName);
+    app.get('/api/users/admin/partialname/:username', findUserByPartialName);
+    app.get('/api/users/admin/pagination', findUsersPagination);
+    app.get('/api/users/admin/count', countUsers);
+    app.get('/api/users/admin/vip/count', countVipUsers);
+    app.get('/api/users/admin/female/count', countFemaleUsers);
+    app.get('/api/users/admin/male/count', countMaleUsers);
+    app.get('/api/users/admin/lastpage', findLastPageUsers);
 }
 
 export default UserController;
+
+

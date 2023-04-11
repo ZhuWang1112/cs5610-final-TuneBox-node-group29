@@ -8,12 +8,22 @@ import FollowController from "./controllers/follow-controller.js";
 import CommentController from "./controllers/comment-controller.js";
 import LikedSongsController from "./controllers/like-controller.js";
 import SongController from "./controllers/song-controller.js";
+
 import session from "express-session";
 import SessionController from "./controllers/session-controller.js";
 
 
 
 const app = express();
+
+import morgan from "morgan";
+
+
+
+// log requests
+app.use(morgan("dev"));
+
+
 app.use(express.json());
 // app.use(cors());
 app.use(
