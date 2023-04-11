@@ -40,6 +40,7 @@ const findComments = async(req, res) => {
       playListName: pName,
       rating: c.rating,
       userName: userObj.userName,
+      userImg: userObj.img,
     };
   });
   res.json(commentsWithDetails);

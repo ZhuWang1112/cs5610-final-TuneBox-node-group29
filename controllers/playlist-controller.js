@@ -1,18 +1,19 @@
 import * as playlistDao from "../dao/playlist-dao.js"
 import * as songDao from "../dao/song-dao.js";
+import * as userDao from "../dao/user-dao.js";
 
 // create a playlist
-const createPlaylist = async(req, res) => {
-    const newPlaylist = req.body;
-    const insertedPlaylist = await playlistDao.createPlaylist(newPlaylist);
-    res.json(insertedPlaylist);
-}
+const createPlaylist = async (req, res) => {
+  const newPlaylist = req.body;
+  const insertedPlaylist = await playlistDao.createPlaylist(newPlaylist);
+  res.json(insertedPlaylist);
+};
 
 // get all playlists
 const findPlaylists = async (req, res) => {
-    const playlists = await playlistDao.findAllPlaylists();
-    res.json(playlists);
-}
+  const playlists = await playlistDao.findAllPlaylists();
+  res.json(playlists);
+};
 
 // get all playlists of one user
 const findPlaylistByUser = async (req, res) => {
@@ -25,11 +26,16 @@ const findPlaylistByUser = async (req, res) => {
 // find details in a playlist by id
 const findPlaylistDetailsById = async (req, res) => {
   const playlist = await playlistDao.findPlaylistById(req.params.pid);
-  console.log(playlist);
+  console.log("playlist-cover-pos:", playlist);
   const songList = playlist.songs;
   const songs = await songDao.findSongByIds(songList);
   playlist.songs = songs;
-  res.json(playlist);
+
+  const user = await userDao.findUserById(playlist.user);
+  res.json({
+    playlist: playlist,
+    user: { name: user.userName, img: user.img },
+  });
 };
 
 const findSongsByPlaylistId = async (req, res) => {
