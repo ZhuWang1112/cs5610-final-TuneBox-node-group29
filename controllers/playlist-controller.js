@@ -1,7 +1,8 @@
 import * as playlistDao from "../dao/playlist-dao.js"
 import * as songDao from "../dao/song-dao.js";
 import * as userDao from "../dao/user-dao.js";
-
+import * as likeDao from "../dao/like-dao.js";
+import * as songPlaylistDao from "../dao/songPlaylist-dao.js";
 // create a playlist
 const createPlaylist = async (req, res) => {
   const newPlaylist = req.body;
@@ -84,28 +85,52 @@ const updatePlaylist = async (req, res) => {
 
 // Return the total number of playlists
 const countPlaylists = async (req, res) => {
-    const count = await playlistDao.countPlaylists();
-    res.json(count);
-}
+  const count = await playlistDao.countPlaylists();
+  res.json(count);
+};
 
 // Return the latest registered user information
 const findLastPageUsers = async (req, res) => {
-    const limit = parseInt(req.query.limit, 10);
-    const lastPage = await playlistDao.findLastPageUsers(limit);
-    res.json(lastPage);
-}
+  const limit = parseInt(req.query.limit, 10);
+  const lastPage = await playlistDao.findLastPageUsers(limit);
+  res.json(lastPage);
+};
 const findPlaylistsPagination = async (req, res) => {
-    const page = parseInt(req.query.page, 10);
-    const limit = parseInt(req.query.limit, 10);
-    const playlists = await playlistDao.findPlaylistsPagination(page, limit);
-    res.json(playlists);
-}
+  const page = parseInt(req.query.page, 10);
+  const limit = parseInt(req.query.limit, 10);
+  const playlists = await playlistDao.findPlaylistsPagination(page, limit);
+  res.json(playlists);
+};
 
 const findDefaultPlaylistByUser = async (req, res) => {
   const uid = req.params.uid;
+  console.log("uid", uid);
   const playlists = await playlistDao.findPlayListsByUserId(uid);
-  const defaultPlaylist = playlists.filter((p) => p.isDefault === true)[0];
-  res.json(defaultPlaylist);
+  console.log("returned, ", playlists[0]);
+  res.json(playlists[0]);
+};
+
+const checkSongs = async (req, res) => {
+  const { loginUser, playlist } = req.params;
+  // get likedSongs object list of targetUser
+  const LikedSongs = await likeDao.findLikedSongsByUser(loginUser);
+  const LikedsongsOfLoginUser = LikedSongs[0].likedSongs;
+  console.log("LikedsongsOfLoginUser", LikedsongsOfLoginUser);
+
+  // find songs in songPlaylist
+  const songPlaylistObj = await songPlaylistDao.findSongsByPlaylistId(playlist);
+  const songList = songPlaylistObj.map((item) => item.songId);
+  const songs = await songDao.findSongByIds(songList); // to be return
+  console.log("songs: ", songs);
+  const exist = songs.map((song, id) => {
+    const index = LikedsongsOfLoginUser.indexOf(song._id);
+    return index === -1 ? false : true;
+  });
+
+  res.json({
+    songs: songs,
+    checkSong: exist,
+  });
 };
 
 export default (app) => {
@@ -113,7 +138,8 @@ export default (app) => {
   app.get("/api/playlists/:user", findPlaylistByUser);
   app.get("/api/playlists/details/:pid", findPlaylistDetailsById);
   app.get("/api/playlists/songs/:pid", findSongsByPlaylistId);
-  app.get("/api/playlists/default/:uid", findDefaultPlaylistByUser);
+  app.get("/api/playlists/:loginUser/:playlist", checkSongs);
+  app.get("/api/playlistsdefault/:uid", findDefaultPlaylistByUser);
   app.delete("/api/playlists/:pid", deletePlaylist);
   app.post("/api/playlists", createPlaylist);
   app.put("/api/playlists/:pid", updatePlaylist);
@@ -121,5 +147,4 @@ export default (app) => {
   app.get("/api/playlists/admin/lastpage", findLastPageUsers);
   app.get("/api/playlists/admin/pagination", findPlaylistsPagination);
   app.delete("/api/playlists/admin/:pid", deletePlaylist);
-
 };

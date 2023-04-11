@@ -14,22 +14,18 @@ const createEmptyFolloweeList = async (req, res) => {
 const handleFollow = async (req, res) => {
   const user = req.params.user;
   const followObj = await followDao.findFollows(user);
-  console.log("followObj: ", followObj);
+
   let followList = followObj[0].followeeList;
-  //   console.log("followList", followList);
+
   const newId = req.body.followId;
   const index = followList.indexOf(newId);
   if (index === -1) {
     followList.push(new mongoose.Types.ObjectId(newId));
-    console.log("add");
-    console.log("after add: ", followList);
   } else {
     followList.splice(index, 1);
-    console.log("delete");
-    console.log("after delete: ", followList);
   }
   const followObjects = await userDao.findUserByIds(followList);
-  console.log("followObjects: ", followObjects);
+
   const newFollowObj = {
     _id: followObj[0]._id,
     user: followObj[0].user,

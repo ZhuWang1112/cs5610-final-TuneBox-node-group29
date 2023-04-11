@@ -8,7 +8,7 @@ import FollowController from "./controllers/follow-controller.js";
 import CommentController from "./controllers/comment-controller.js";
 import LikedSongsController from "./controllers/like-controller.js";
 import SongController from "./controllers/song-controller.js";
-
+import SongPlaylistController from "./controllers/songPlaylist-controller.js";
 import session from "express-session";
 import SessionController from "./controllers/session-controller.js";
 
@@ -56,5 +56,6 @@ CommentController(app);
 LikedSongsController(app);
 SongController(app);
 SessionController(app);
+SongPlaylistController(app);
 app.listen(process.env.PORT || 4000)
 // app.listen(4000)
