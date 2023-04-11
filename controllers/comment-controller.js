@@ -38,6 +38,7 @@ const findComments = async(req, res) => {
       user: c.user,
       content: c.content,
       playListName: pName,
+      rating: c.rating,
       userName: userObj.userName,
     };
   });
