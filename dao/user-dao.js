@@ -12,19 +12,21 @@ export const findLastPageUsers = async (limit) => {
     const lastPage = Math.ceil(totalUsers / limit);
     return findUsersPagination(lastPage, limit);
 }
-export const findUserbyName = (userName) =>
+export const findUserByPartialName = (userName) =>
+    userModel.find({ userName: { $regex: userName, $options: "i" } });
+export const findUserByName = (userName) =>
   userModel.findOne({ userName: userName });
 export const findUserById = (id) => userModel.findOne({ _id: id });
 export const findUserByIds = (ids) => userModel.find({ _id: { $in: ids } });
 export const findAllUsers = () => userModel.find();
 export const createUser = (user) => userModel.create(user);
 export const deleteUser = (userId) => userModel.deleteOne({ _id: userId });
-export const countUsers = () => userModel.countDocuments();
+export const countUsers = () => userModel.countDocuments({isDeleted: false});
 export const updateUser = async (userId, user) => {
     await userModel.updateOne({ _id: userId }, { $set: user });
     const updatedUser = await userModel.findOne({ _id: userId });
     return updatedUser;
 };
-export const countVipUsers = () => userModel.countDocuments({ isVip: true });
-export const countFemaleUsers = () => userModel.countDocuments({ gender: "female" });
-export const countMaleUsers = () => userModel.countDocuments({gender: "male"})
+export const countVipUsers = () => userModel.countDocuments({ isVip: true, isDeleted: false });
+export const countFemaleUsers = () => userModel.countDocuments({ gender: "female", isDeleted: false });
+export const countMaleUsers = () => userModel.countDocuments({gender: "male", isDeleted: false });
