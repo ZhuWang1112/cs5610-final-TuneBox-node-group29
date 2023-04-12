@@ -20,8 +20,10 @@ const handleFollow = async (req, res) => {
   const newId = req.body.followId;
   const index = followList.indexOf(newId);
   if (index === -1) {
+    console.log("added");
     followList.push(new mongoose.Types.ObjectId(newId));
   } else {
+    console.log("deleted");
     followList.splice(index, 1);
   }
   const followObjects = await userDao.findUserByIds(followList);
@@ -38,8 +40,12 @@ const handleFollow = async (req, res) => {
 // Find followeeList(id) according to userId
 const findFollowList = async (req, res) => {
   const user = req.params.user;
-  const followList = await followDao.findFollows(user);
-  res.json(followList);
+  if (user === "null") {
+    res.json([]);
+  } else {
+    const followList = await followDao.findFollows(user);
+    res.json(followList);
+  }
 };
 
 // Find followeeObject according to userId
@@ -57,18 +63,26 @@ const findFollowObjects = async (req, res) => {
 
 const checkFolloweeList = async (req, res) => {
   const { loginUser, targetUser } = req.params; //user1 is login user, user2 is another user
+
   // get follow object list of targetUser
   const followObjTarget = await followDao.findFollows(targetUser);
   console.log("followObjTarget", followObjTarget);
   const followListTarget = followObjTarget[0].followeeList;
   console.log("followListTarget", followListTarget);
-  const followObjectsTarget = await userDao.findUserByIds(followListTarget);
-  console.log("followObjectsTarget", followObjectsTarget);
-  // get the followeelist of loginUser
-  const followObjLogin = await followDao.findFollows(loginUser);
-  const followListLogin = followObjLogin[0].followeeList;
-  console.log("followListLogin", followListLogin);
-  //   console.log("followList: ", followList);
+  let followObjectsTarget = await userDao.findUserByIds(followListTarget);
+
+  // remove the loginuser from followObjectsTarget
+  followObjectsTarget = followObjectsTarget.filter(
+    (obj) => obj._id.toString() !== loginUser
+  );
+
+  let followListLogin = [];
+  if (loginUser !== "null") {
+    // get the followeelist of loginUser
+    const followObjLogin = await followDao.findFollows(loginUser);
+    followListLogin = followObjLogin[0].followeeList;
+  }
+
   const exist = followObjectsTarget.map((obj, id) => {
     const index = followListLogin.indexOf(obj._id);
     return index === -1 ? false : true;

@@ -119,9 +119,14 @@ const findDefaultPlaylistByUser = async (req, res) => {
 
 const checkSongs = async (req, res) => {
   const { loginUser, playlist } = req.params;
+  console.log("loginUser: ", loginUser === "null");
   // get likedSongs object list of targetUser
-  const LikedSongs = await likeDao.findLikedSongsByUser(loginUser);
-  const LikedsongsOfLoginUser = LikedSongs[0].likedSongs;
+  let LikedsongsOfLoginUser = [];
+  if (loginUser !== "null") {
+    const LikedSongs = await likeDao.findLikedSongsByUser(loginUser);
+    LikedsongsOfLoginUser = LikedSongs[0].likedSongs;
+    console.log("fetch");
+  }
   console.log("LikedsongsOfLoginUser", LikedsongsOfLoginUser);
 
   // find songs in songPlaylist
