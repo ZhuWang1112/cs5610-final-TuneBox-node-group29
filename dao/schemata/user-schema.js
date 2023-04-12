@@ -13,13 +13,14 @@ const userSchema = new mongoose.Schema(
       default: "male",
       enum: ["male", "female", "non-binary"],
     },
-
     isAdmin: { type: Boolean, default: false },
     isVip: { type: Boolean, default: false },
     playlistsCount: { type: Number, default: 1 },
     img: { type: String, default: "/images/profile-avatar.jpeg" },
     createTime: { type: Date, default: Date.now },
-      isDeleted: { type: Boolean, default: false },
+    isDeleted: { type: Boolean, default: false },
+    // likedList: {type: Array, default: []},
+    // followeeList: {type: Array, default: []}
     // playlists: [{ type: mongoose.Schema.Types.ObjectId, ref: "playlist" }],
   },
   { collection: "users" }
