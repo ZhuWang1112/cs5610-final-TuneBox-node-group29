@@ -53,8 +53,15 @@ const deleteComments = async(req, res) => {
     res.json(status);
 }
 
+const findCommentsByPlaylist = async (req, res) => {
+  const pid = req.params.pid;
+  const comments = await commentDao.findCommentsByPlaylist(pid);
+  res.json(comments);
+};
+
 export default (app) => {
-    app.post('/api/comment', createComment);
-    app.get('/api/comment/:uid', findComments);
-    app.delete('/api/comment/:cid', deleteComments);
-}
+  app.post("/api/comment", createComment);
+  app.get("/api/comment/:uid", findComments);
+  app.get("/api/comment/playlist/:pid", findCommentsByPlaylist);
+  app.delete("/api/comment/:cid", deleteComments);
+};
