@@ -1,7 +1,7 @@
 import playlistModel from "./models/playlist-model.js";
 import userModel from "./models/user-model.js";
 import songModel from "./models/song-model.js";
-
+import songPlayModel from "./models/songPlaylist-model.js";
 
 // return array of playlists
 export const findPlayListsByUserId = (req) => playlistModel.find(req);
