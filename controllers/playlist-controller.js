@@ -23,7 +23,6 @@ const findPlaylistByUser = async (req, res) => {
   const playlists = await playlistDao.findPlayListsByUserId({
     user: user,
   });
-  console.log(playlists);
   res.json(playlists);
 };
 

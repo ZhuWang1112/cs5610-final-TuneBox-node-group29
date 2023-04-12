@@ -13,10 +13,8 @@ const createComment = async(req, res) => {
 // also get the playlistname and artist name for displaying in Profile page
 const findComments = async(req, res) => {
   const uid = req.params.uid;
-  console.log(uid);
   const comments = await commentDao.findCommentsByUserId(uid);
   const playlistIds = comments.map((c) => c.playlist);
-  console.log(playlistIds);
   const playlists = await playlistDao.findPlaylistByIds(playlistIds);
   const userIds = playlists.map((p) => p.user);
   const artistsOfPlaylists = await userDao.findUserByIds(userIds);
@@ -27,11 +25,10 @@ const findComments = async(req, res) => {
       (p) => p._id.toString() == c.playlist.toString()
     )[0];
     const pName = playlistObj.playListName;
+    const pCover = playlistObj.img;
     const userObj = artistsOfPlaylists.filter(
       (u) => u._id.toString() == playlistObj.user.toString()
     )[0];
-    console.log("pName", pName);
-    console.log("userObj", userObj);
     return {
       _id: c._id,
       playlist: c.playlist,
@@ -40,7 +37,7 @@ const findComments = async(req, res) => {
       playListName: pName,
       rating: c.rating,
       userName: userObj.userName,
-      userImg: userObj.img,
+      userImg: pCover,
     };
   });
   res.json(commentsWithDetails);

@@ -11,6 +11,7 @@ const songPlaylistSchema = new mongoose.Schema(
     },
     playlistId: {
       type: mongoose.Schema.Types.ObjectId,
+      ref: "playlists",
       required: true,
     },
   },
