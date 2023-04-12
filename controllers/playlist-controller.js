@@ -6,6 +6,7 @@ import * as songPlaylistDao from "../dao/songPlaylist-dao.js";
 // create a playlist
 const createPlaylist = async (req, res) => {
   const newPlaylist = req.body;
+  console.log("newPlaylist in createPlaylist", newPlaylist);
   const insertedPlaylist = await playlistDao.createPlaylist(newPlaylist);
   res.json(insertedPlaylist);
 };
@@ -19,7 +20,9 @@ const findPlaylists = async (req, res) => {
 // get all playlists of one user
 const findPlaylistByUser = async (req, res) => {
   const user = req.params.user;
-  const playlists = await playlistDao.findPlayListsByUserId(user);
+  const playlists = await playlistDao.findPlayListsByUserId({
+    user: user,
+  });
   console.log(playlists);
   res.json(playlists);
 };
@@ -55,7 +58,9 @@ const deletePlaylist = async (req, res) => {
   const user = playlistToDelete.user;
   // move all songs to default playlist
   // get default playlist
-  let playlists = await playlistDao.findPlayListsByUserId(user);
+  let playlists = await playlistDao.findPlayListsByUserId({
+    user: user,
+  });
 
   const defaultIdx = playlists.findIndex((p) => p.isDefault === true);
   const deletedIdx = playlists.findIndex(
@@ -105,7 +110,10 @@ const findPlaylistsPagination = async (req, res) => {
 const findDefaultPlaylistByUser = async (req, res) => {
   const uid = req.params.uid;
   console.log("uid", uid);
-  const playlists = await playlistDao.findPlayListsByUserId(uid);
+  const playlists = await playlistDao.findPlayListsByUserId({
+    user: uid,
+    isDefault: true,
+  });
   console.log("returned, ", playlists[0]);
   res.json(playlists[0]);
 };

@@ -4,8 +4,7 @@ import songModel from "./models/song-model.js";
 
 
 // return array of playlists
-export const findPlayListsByUserId = (userId) =>
-  playlistModel.find({ user: userId, isDefault: true });
+export const findPlayListsByUserId = (req) => playlistModel.find(req);
 export const findPlaylistByIds = (ids) =>
   playlistModel.find({ _id: { $in: ids } });
 export const findPlaylistById = (id) => playlistModel.findOne({ _id: id });
