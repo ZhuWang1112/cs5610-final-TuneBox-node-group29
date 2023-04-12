@@ -56,8 +56,6 @@ const UserController = (app) => {
             return;
         }
         const newUser = await userDao.createUser(user);
-        // createEmptyFolloweeList();
-        // createEmptyLikedList();
         req.session.currentUser = newUser;
         res.json(newUser);
     };
