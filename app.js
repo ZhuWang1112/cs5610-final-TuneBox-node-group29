@@ -77,10 +77,7 @@ CommentController(app);
 LikedSongsController(app);
 SongController(app);
 SessionController(app);
-<<<<<<< HEAD
 SongPlaylistController(app);
-=======
 HomeController(app);
->>>>>>> 4307db1 (almost finish homepage)
 app.listen(process.env.PORT || 4000)
 // app.listen(4000)
