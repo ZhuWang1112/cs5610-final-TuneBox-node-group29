@@ -1,102 +1,114 @@
-{
-  "info": {
-    "category": "Billboard",
-    "chart": "HOT 100",
-    "date": "2019-05-11",
-    "source": "Billboard-API"
+[
+  {
+    "rank": "1",
+    "title": "Old Town Road",
+    "artist": "Lil Nas X",
+    "artistId": "7jVv8c5Fj3E9VhNjxT4snq",
+    "img": "https://i.scdn.co/image/ab6761610000f178d66f1e0c883f319443d68c45",
+    "weeks at no.1": "5",
+    "last week": "1",
+    "peak position": "1",
+    "weeks on chart": "9",
+    "detail": "same"
   },
-  "content": {
-    "1": {
-      "rank": "1",
-      "title": "Old Town Road",
-      "artist": "Lil Nas X Featuring Billy Ray Cyrus",
-      "weeks at no.1": "5",
-      "last week": "1",
-      "peak position": "1",
-      "weeks on chart": "9",
-      "detail": "same"
-    },
-    "2": {
-      "rank": "2",
-      "title": "ME!",
-      "artist": "Taylor Swift Featuring Brendon Urie",
-      "last week": "100",
-      "peak position": "2",
-      "weeks on chart": "2",
-      "detail": "up"
-    },
-    "3": {
-      "rank": "3",
-      "title": "Wow.",
-      "artist": "Post Malone",
-      "last week": "2",
-      "peak position": "2",
-      "weeks on chart": "19",
-      "detail": "down"
-    },
-    "4": {
-      "rank": "4",
-      "title": "Sucker",
-      "artist": "Jonas Brothers",
-      "last week": "5",
-      "peak position": "1",
-      "weeks on chart": "9",
-      "detail": "up"
-    },
-    "5": {
-      "rank": "5",
-      "title": "Sunflower (Spider-Man: Into The Spider-Verse)",
-      "artist": "Post Malone & Swae Lee",
-      "last week": "3",
-      "peak position": "1",
-      "weeks on chart": "28",
-      "detail": "down"
-    },
-    "6": {
-      "rank": "6",
-      "title": "7 Rings",
-      "artist": "Ariana Grande",
-      "last week": "4",
-      "peak position": "1",
-      "weeks on chart": "15",
-      "detail": "down"
-    },
-    "7": {
-      "rank": "7",
-      "title": "Without Me",
-      "artist": "Halsey",
-      "last week": "6",
-      "peak position": "1",
-      "weeks on chart": "30",
-      "detail": "down"
-    },
-    "8": {
-      "rank": "8",
-      "title": "Dancing With A Stranger",
-      "artist": "Sam Smith & Normani",
-      "last week": "7",
-      "peak position": "7",
-      "weeks on chart": "16",
-      "detail": "down"
-    },
-    "9": {
-      "rank": "9",
-      "title": "Bad Guy",
-      "artist": "Billie Eilish",
-      "last week": "9",
-      "peak position": "7",
-      "weeks on chart": "5",
-      "detail": "same"
-    },
-    "10": {
-      "rank": "10",
-      "title": "Talk",
-      "artist": "Khalid",
-      "last week": "8",
-      "peak position": "8",
-      "weeks on chart": "12",
-      "detail": "down"
-    }
+  {
+    "rank": "2",
+    "title": "ME!",
+    "artist": "Taylor Swift",
+    "artistId": "06HL4z0CvFAxyc27GXpf02",
+    "img": "https://i.scdn.co/image/ab6761610000f1785a00969a4698c3132a15fbb0",
+    "last week": "100",
+    "peak position": "2",
+    "weeks on chart": "2",
+    "detail": "up"
+  },
+  {
+    "rank": "3",
+    "title": "Wow.",
+    "artist": "Post Malone",
+    "artistId": "246dkjvS1zLTtiykXe5h60",
+    "img": "https://i.scdn.co/image/ab6761610000f178b894ef9fa437b0389c5567cc",
+    "last week": "2",
+    "peak position": "2",
+    "weeks on chart": "19",
+    "detail": "down"
+  },
+  {
+    "rank": "4",
+    "title": "Sucker",
+    "artist": "Jonas Brothers",
+    "artistId": "23fqKkggKUBHNkbKtXEls4",
+    "img": "https://i.scdn.co/image/ab6761610000f178e636670d717588b11d654130",
+    "last week": "5",
+    "peak position": "1",
+    "weeks on chart": "9",
+    "detail": "up"
+  },
+  {
+    "rank": "5",
+    "title": "Sunflower (Spider-Man: Into The Spider-Verse)",
+    "artist": "Swae Lee",
+    "artistId": "1zNqQNIdeOUZHb8zbZRFMX",
+    "img": "https://i.scdn.co/image/ab6761610000f178d15f6c486f0e9cb3860a5f0b",
+    "last week": "3",
+    "peak position": "1",
+    "weeks on chart": "28",
+    "detail": "down"
+  },
+  {
+    "rank": "6",
+    "title": "7 Rings",
+    "artist": "Ariana Grande",
+    "artistId": "66CXWjxzNUsdJxJ2JdwvnR",
+    "img": "https://i.scdn.co/image/ab6761610000f178cdce7620dc940db079bf4952",
+    "last week": "4",
+    "peak position": "1",
+    "weeks on chart": "15",
+    "detail": "down"
+  },
+  {
+    "rank": "7",
+    "title": "Without Me",
+    "artist": "Halsey",
+    "artistId": "26VFTg2z8YR0cCuwLzESi2",
+    "img": "https://i.scdn.co/image/ab6761610000f178d707e1c5177614c4ec95a06c",
+    "last week": "6",
+    "peak position": "1",
+    "weeks on chart": "30",
+    "detail": "down"
+  },
+  {
+    "rank": "8",
+    "title": "Dancing With A Stranger",
+    "artist": "Nicki Minaj",
+    "artistId": "0hCNtLu0JehylgoiP8L4Gh",
+    "img": "https://i.scdn.co/image/ab6761610000f1786a8e5e8752d1dc2dafa63f20",
+    "last week": "7",
+    "peak position": "7",
+    "weeks on chart": "16",
+    "detail": "down"
+  },
+  {
+    "rank": "9",
+    "title": "Bad Guy",
+    "artist": "Billie Eilish",
+    "artistId": "6qqNVTkY8uBg9cP3Jd7DAH",
+    "img": "https://i.scdn.co/image/ab6761610000f178d8b9980db67272cb4d2c3daf",
+    "last week": "9",
+    "peak position": "7",
+    "weeks on chart": "5",
+    "detail": "same"
+  },
+  {
+    "rank": "10",
+    "title": "Talk",
+    "artist": "Khalid",
+    "artistId": "6LuN9FCkKOj5PcnpouEgny",
+    "img": "https://i.scdn.co/image/ab6761610000f17831072db9da0311ecfabe96bf",
+    "last week": "8",
+    "peak position": "8",
+    "weeks on chart": "12",
+    "detail": "down"
   }
-}
+]
 

@@ -17,6 +17,7 @@ import SessionController from "./controllers/session-controller.js";
 const app = express();
 
 import morgan from "morgan";
+import HomeController from "./controllers/home-controller.js";
 
 
 
@@ -32,6 +33,26 @@ app.use(
         origin: "http://localhost:3000",
     })
 );
+
+
+// catch exceptions
+process.on('uncaughtException', (error) => {
+    console.error('An unhandled exception was caught:', error);
+
+    //close server
+    server.close(() => {
+        console.log('server down');
+
+        // quit process
+        process.exit(1);
+    });
+
+    // force quit after 10 seconds
+    setTimeout(() => {
+        console.log('Forcing server down');
+        process.exit(1);
+    }, 10000).unref(); // unref() to allow the program to exit if this is the only active handle.
+});
 
 
 app.use(
@@ -56,6 +77,10 @@ CommentController(app);
 LikedSongsController(app);
 SongController(app);
 SessionController(app);
+<<<<<<< HEAD
 SongPlaylistController(app);
+=======
+HomeController(app);
+>>>>>>> 4307db1 (almost finish homepage)
 app.listen(process.env.PORT || 4000)
 // app.listen(4000)

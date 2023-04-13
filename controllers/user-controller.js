@@ -109,16 +109,6 @@ const UserController = (app) => {
         res.json(users);
     }
 
-
-    app.get('/api/users', findUsers);
-    app.get('/api/users/:_id', findUserById);
-
-    app.post("/api/users/login", login);
-    app.post("/api/users/logout", logout);
-    app.post("/api/users/register", register);
-    app.post("/api/users", createUser);
-
-
     app.put('/api/users/admin/:_id', updateUserById);
     app.delete('/api/users/admin/:_id', deleteUserById);
     app.get('/api/users/admin/name/:username', findUserByName);
@@ -129,6 +119,17 @@ const UserController = (app) => {
     app.get('/api/users/admin/female/count', countFemaleUsers);
     app.get('/api/users/admin/male/count', countMaleUsers);
     app.get('/api/users/admin/lastpage', findLastPageUsers);
+
+
+    app.get('/api/users', findUsers);
+    app.get('/api/users/:_id', findUserById);
+
+    app.post("/api/users/login", login);
+    app.post("/api/users/logout", logout);
+    app.post("/api/users/register", register);
+    app.post("/api/users", createUser);
+
+
 }
 
 export default UserController;
