@@ -7,4 +7,4 @@ export const findFollows = (userId) => {
 export const updateFollow = (uid, followList) =>
   followsModel.updateOne({ user: uid }, { $set: followList });
 
-  export const createFolloweeList = (follow) => followsModel.create(follow);
+export const createFolloweeList = (followObject) => followsModel.create(followObject);

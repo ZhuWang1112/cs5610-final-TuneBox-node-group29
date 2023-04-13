@@ -1,14 +1,16 @@
 import playlistModel from "./models/playlist-model.js";
 import userModel from "./models/user-model.js";
 import songModel from "./models/song-model.js";
+import songPlayModel from "./models/songPlaylist-model.js";
+
 
 // show on home page
 export const findTopPlaylists = () =>
     playlistModel.find().limit(5).populate("user", "userName", userModel);
 
+
 // return array of playlists
-export const findPlayListsByUserId = (userId) =>
-  playlistModel.find({ user: userId, isDefault: true });
+export const findPlayListsByUserId = (req) => playlistModel.find(req);
 export const findPlaylistByIds = (ids) =>
   playlistModel.find({ _id: { $in: ids } });
 export const findPlaylistById = (id) => playlistModel.findOne({ _id: id });

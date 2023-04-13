@@ -6,6 +6,7 @@ import * as songPlaylistDao from "../dao/songPlaylist-dao.js";
 // create a playlist
 const createPlaylist = async (req, res) => {
   const newPlaylist = req.body;
+  console.log("newPlaylist in createPlaylist", newPlaylist);
   const insertedPlaylist = await playlistDao.createPlaylist(newPlaylist);
   res.json(insertedPlaylist);
 };
@@ -19,8 +20,9 @@ const findPlaylists = async (req, res) => {
 // get all playlists of one user
 const findPlaylistByUser = async (req, res) => {
   const user = req.params.user;
-  const playlists = await playlistDao.findPlayListsByUserId(user);
-  console.log(playlists);
+  const playlists = await playlistDao.findPlayListsByUserId({
+    user: user,
+  });
   res.json(playlists);
 };
 
@@ -55,7 +57,9 @@ const deletePlaylist = async (req, res) => {
   const user = playlistToDelete.user;
   // move all songs to default playlist
   // get default playlist
-  let playlists = await playlistDao.findPlayListsByUserId(user);
+  let playlists = await playlistDao.findPlayListsByUserId({
+    user: user,
+  });
 
   const defaultIdx = playlists.findIndex((p) => p.isDefault === true);
   const deletedIdx = playlists.findIndex(
@@ -105,16 +109,24 @@ const findPlaylistsPagination = async (req, res) => {
 const findDefaultPlaylistByUser = async (req, res) => {
   const uid = req.params.uid;
   console.log("uid", uid);
-  const playlists = await playlistDao.findPlayListsByUserId(uid);
+  const playlists = await playlistDao.findPlayListsByUserId({
+    user: uid,
+    isDefault: true,
+  });
   console.log("returned, ", playlists[0]);
   res.json(playlists[0]);
 };
 
 const checkSongs = async (req, res) => {
   const { loginUser, playlist } = req.params;
+  console.log("loginUser: ", loginUser === "null");
   // get likedSongs object list of targetUser
-  const LikedSongs = await likeDao.findLikedSongsByUser(loginUser);
-  const LikedsongsOfLoginUser = LikedSongs[0].likedSongs;
+  let LikedsongsOfLoginUser = [];
+  if (loginUser !== "null") {
+    const LikedSongs = await likeDao.findLikedSongsByUser(loginUser);
+    LikedsongsOfLoginUser = LikedSongs[0].likedSongs;
+    console.log("fetch");
+  }
   console.log("LikedsongsOfLoginUser", LikedsongsOfLoginUser);
 
   // find songs in songPlaylist

@@ -1,5 +1,9 @@
 import * as userDao from "../dao/user-dao.js"
-
+import alert from 'alert'
+import { createEmptyLikedList } from "./like-controller.js"
+import { createEmptyFolloweeList } from "./follow-controller.js"
+import * as followDao from "../dao/follow-dao.js";
+import * as likeDao from "../dao/like-dao.js";
 
 const UserController = (app) => {
     // find all users
@@ -51,7 +55,6 @@ const UserController = (app) => {
             alert("userName already exist!")
             return;
         }
-        console.log("creating new user----user-controller")
         const newUser = await userDao.createUser(user);
         req.session.currentUser = newUser;
         res.json(newUser);
