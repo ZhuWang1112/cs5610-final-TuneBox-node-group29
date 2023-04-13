@@ -6,7 +6,7 @@ import mongoose from "mongoose";
 
 // When a new user register, add one more record with empty likedList in the likedSongs db
 export const createEmptyLikedList = async (req, res) => {
-  const newLikedObject = { user_id: req.params.user_id, likedSongs: [] };
+  const newLikedObject = { user: req.params.user_id, likedSongs: [] };
   const likedObject = await likeDao.createLikedSongsList(newLikedObject);
   res.json(likedObject);
 };

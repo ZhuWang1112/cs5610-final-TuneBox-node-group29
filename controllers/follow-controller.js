@@ -5,7 +5,7 @@ import mongoose from "mongoose";
 
 // When a new user register, add one more record with empty followeeList in the follow db
 export const createEmptyFolloweeList = async (req, res) => {
-  const newFollowObject = { user_id: req.params.user_id, followeeList: [] };
+  const newFollowObject = { user: req.params.user_id, followeeList: [] };
   const FollowObject = await followDao.createFolloweeList(newFollowObject);
   res.json(FollowObject);
 };
@@ -65,6 +65,7 @@ const checkFolloweeList = async (req, res) => {
   const { loginUser, targetUser } = req.params; //user1 is login user, user2 is another user
 
   // get follow object list of targetUser
+  console.log("targetUser: ", targetUser);
   const followObjTarget = await followDao.findFollows(targetUser);
   console.log("followObjTarget", followObjTarget);
   const followListTarget = followObjTarget[0].followeeList;
