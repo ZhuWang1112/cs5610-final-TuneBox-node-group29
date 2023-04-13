@@ -48,36 +48,54 @@ const findSongsByPlaylistId = async (req, res) => {
   res.json(songs);
 };
 
-// delete playlist according to _id field in playlist records
+// old: (move all records to the default playlist) delete playlist according to _id field in playlist records
+// const deletePlaylist = async (req, res) => {
+//   const playlistIdToDelete = req.params.pid;
+//   const playlistToDelete = await playlistDao.findPlaylistById(
+//     playlistIdToDelete
+//   );
+//   const user = playlistToDelete.user;
+//   // move all songs to default playlist
+//   // get default playlist
+//   let playlists = await playlistDao.findPlayListsByUserId({
+//     user: user,
+//   });
+
+//   const defaultIdx = playlists.findIndex((p) => p.isDefault === true);
+//   const deletedIdx = playlists.findIndex(
+//     (p) => p._id.toString() === playlistIdToDelete
+//   );
+
+//   const defaultPlaylist = playlists[defaultIdx];
+//   defaultPlaylist.songs = [...defaultPlaylist.songs, ...playlistToDelete.songs];
+//   playlists = [
+//     ...playlists.slice(0, defaultIdx),
+//     defaultPlaylist,
+//     ...playlists.slice(defaultIdx + 1),
+//   ];
+//   playlists.splice(deletedIdx, 1);
+
+//   await playlistDao.updatePlaylist(defaultPlaylist);
+//   const status = await playlistDao.deletePlaylist(playlistIdToDelete);
+//   res.json(playlists);
+// };
+
+// new (remove all songs from likedSongs)
 const deletePlaylist = async (req, res) => {
-  const playlistIdToDelete = req.params.pid;
-  const playlistToDelete = await playlistDao.findPlaylistById(
-    playlistIdToDelete
+  const { _id, user } = req.body.playlistObj;
+  // delete playlist from playlist
+  await playlistDao.deletePlaylist(_id);
+  const likeSongsToDelete = await songPlaylistDao.findSongsByPlaylistId(_id);
+  const songIds = likeSongsToDelete.map((song) => song.songId.toString());
+  // delete all records in songPlaylist associate with the playlist
+  await songPlaylistDao.deleteSongPlaylistById(_id);
+  // delete songs in likedSongs
+  const likedObj = await likeDao.findLikedSongsByUser(user);
+  likedObj[0].likedSongs = likedObj[0].likedSongs.filter(
+    (s) => !songIds.includes(s.toString())
   );
-  const user = playlistToDelete.user;
-  // move all songs to default playlist
-  // get default playlist
-  let playlists = await playlistDao.findPlayListsByUserId({
-    user: user,
-  });
-
-  const defaultIdx = playlists.findIndex((p) => p.isDefault === true);
-  const deletedIdx = playlists.findIndex(
-    (p) => p._id.toString() === playlistIdToDelete
-  );
-
-  const defaultPlaylist = playlists[defaultIdx];
-  defaultPlaylist.songs = [...defaultPlaylist.songs, ...playlistToDelete.songs];
-  playlists = [
-    ...playlists.slice(0, defaultIdx),
-    defaultPlaylist,
-    ...playlists.slice(defaultIdx + 1),
-  ];
-  playlists.splice(deletedIdx, 1);
-
-  await playlistDao.updatePlaylist(defaultPlaylist);
-  const status = await playlistDao.deletePlaylist(playlistIdToDelete);
-  res.json(playlists);
+  await likeDao.updateLikedSongs(user, likedObj[0]);
+  res.json(likedObj[0]);
 };
 
 // update playlist by id
@@ -146,7 +164,6 @@ const checkSongs = async (req, res) => {
 };
 
 export default (app) => {
-
   app.get("/api/playlists/admin/count", countPlaylists);
   app.get("/api/playlists/admin/lastpage", findLastPageUsers);
   app.get("/api/playlists/admin/pagination", findPlaylistsPagination);
@@ -158,11 +175,7 @@ export default (app) => {
   app.get("/api/playlists/songs/:pid", findSongsByPlaylistId);
   app.get("/api/playlists/:loginUser/:playlist", checkSongs);
   app.get("/api/playlistsdefault/:uid", findDefaultPlaylistByUser);
-  app.delete("/api/playlists/:pid", deletePlaylist);
+  app.delete("/api/playlists", deletePlaylist);
   app.post("/api/playlists", createPlaylist);
   app.put("/api/playlists/:pid", updatePlaylist);
-  app.get("/api/playlists/admin/count", countPlaylists);
-  app.get("/api/playlists/admin/lastpage", findLastPageUsers);
-  app.get("/api/playlists/admin/pagination", findPlaylistsPagination);
-  app.delete("/api/playlists/admin/:pid", deletePlaylist);
 };

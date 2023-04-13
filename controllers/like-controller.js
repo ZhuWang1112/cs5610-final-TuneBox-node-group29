@@ -14,7 +14,12 @@ export const createEmptyLikedList = async (req, res) => {
 // Get an array of likedSongs id by userId
 const findLikedSongsByUser = async (req, res) => {
   const likedObject = await likeDao.findLikedSongsByUser(req.params.uid);
-  res.json(likedObject);
+  let songObjs = [];
+  if (likedObject.length > 0) {
+    const songs = likedObject[0].likedSongs;
+    songObjs = await songDao.findSongByIds(songs);
+  }
+  res.json(songObjs);
 };
 
 const handleLikeSong = async (req, res) => {
