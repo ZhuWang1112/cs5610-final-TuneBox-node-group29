@@ -40,6 +40,9 @@ export const updateUser = async (userId, user) => {
     const updatedUser = await userModel.findOne({ _id: userId });
     return updatedUser;
 };
+
+// show on home page
+export const findTopUsers = () => userModel.find().limit(5);
 export const countVipUsers = () => userModel.countDocuments({ isVip: true, isDeleted: false });
 export const countFemaleUsers = () => userModel.countDocuments({ gender: "female", isDeleted: false });
 export const countMaleUsers = () => userModel.countDocuments({gender: "male", isDeleted: false });

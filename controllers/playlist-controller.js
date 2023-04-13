@@ -146,6 +146,12 @@ const checkSongs = async (req, res) => {
 };
 
 export default (app) => {
+
+  app.get("/api/playlists/admin/count", countPlaylists);
+  app.get("/api/playlists/admin/lastpage", findLastPageUsers);
+  app.get("/api/playlists/admin/pagination", findPlaylistsPagination);
+  app.delete("/api/playlists/admin/:pid", deletePlaylist);
+
   app.get("/api/playlists", findPlaylists);
   app.get("/api/playlists/:user", findPlaylistByUser);
   app.get("/api/playlists/details/:pid", findPlaylistDetailsById);
