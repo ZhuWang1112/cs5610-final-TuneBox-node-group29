@@ -8,6 +8,7 @@ const playlistSchema = new mongoose.Schema(
     isDefault: { type: Boolean, required: true },
     songs: { type: Array, default: [] },
     img: { type: String, default: "/images/playlist-cover.jpeg" },
+    rating: { type: Number, default: 0 },
   },
   { collection: "playlists" }
 );

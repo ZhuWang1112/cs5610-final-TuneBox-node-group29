@@ -10,3 +10,5 @@ export const findCommentsByPlaylist = (pid) => {
     .find({ playlist: pid })
     .populate("user", ["img", "userName"], userModel);
 };
+export const findCommentNumberByPlaylist = (pid) =>
+  commentModel.countDocuments({ playlist: pid });
