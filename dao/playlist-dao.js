@@ -2,11 +2,17 @@ import playlistModel from "./models/playlist-model.js";
 import userModel from "./models/user-model.js";
 import songModel from "./models/song-model.js";
 import songPlayModel from "./models/songPlaylist-model.js";
+import mongoose from "mongoose";
 
 
 // show on home page
-export const findTopPlaylists = () =>
-    playlistModel.find().limit(5).populate("user", "userName", userModel);
+export const findTopPlaylists = (uid) =>
+    playlistModel.find({ user: { $ne: new mongoose.Types.ObjectId(uid) } })// not show current user's playlist
+        .sort({ rating: -1 }) // sort by rating
+        .limit(5)
+        .catch((err) => {
+            console.error(err);
+        });
 
 
 // return array of playlists
