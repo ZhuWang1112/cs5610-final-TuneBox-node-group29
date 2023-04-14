@@ -44,6 +44,9 @@ export const updateUser = async (userId, user) => {
 
 // show on home page
 export const findTopUsers = async (uid) => {
+    if (uid === null) {
+        return userModel.find({isDeleted: false}).limit(5);
+    }
     // console.log(typeof uid);
     const followedUserIds = await followsModel
         .findOne({ user: uid })

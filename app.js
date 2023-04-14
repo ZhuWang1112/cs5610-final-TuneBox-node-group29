@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from "dotenv";
 import mongoose from "mongoose";
+import HomeController from "./controllers/home-controller.js";
 import PlaylistController from "./controllers/playlist-controller.js";
 import UserController from "./controllers/user-controller.js";
 import FollowController from "./controllers/follow-controller.js";
@@ -11,14 +12,9 @@ import SongController from "./controllers/song-controller.js";
 import SongPlaylistController from "./controllers/songPlaylist-controller.js";
 import session from "express-session";
 import SessionController from "./controllers/session-controller.js";
-
-
+import morgan from "morgan";
 
 const app = express();
-
-import morgan from "morgan";
-import HomeController from "./controllers/home-controller.js";
-
 
 
 // log requests
@@ -69,7 +65,11 @@ const CONNECTION_STRING = process.env.DB_CONNECTION || 'mongodb://localhost:2701
 mongoose.connect(CONNECTION_STRING);
 
 app.get('/hello', (req, res) => {res.send('Hello World!')})
-
+// app.use((req, res, next) => {
+//     console.log("Request cookies:", req.cookies);
+//     console.log("Session ID:", req.session.id);
+//     next();
+// });
 PlaylistController(app);
 UserController(app);
 FollowController(app);

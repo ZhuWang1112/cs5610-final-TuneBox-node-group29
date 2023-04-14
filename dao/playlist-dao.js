@@ -6,13 +6,20 @@ import mongoose from "mongoose";
 
 
 // show on home page
-export const findTopPlaylists = (uid) =>
-    playlistModel.find({ user: { $ne: new mongoose.Types.ObjectId(uid) } })// not show current user's playlist
+export const findTopPlaylists = (uid) =>{
+    // console.log("uid:", uid)
+    if (uid ) {
+        return playlistModel.find({ user: { $ne: new mongoose.Types.ObjectId(uid) } })// not show current user's playlist
+            .sort({ rating: -1 }) // sort by rating
+            .limit(5)
+            .populate("user", "userName", userModel);
+    } else {
+        return playlistModel.find()
         .sort({ rating: -1 }) // sort by rating
         .limit(5)
-        .catch((err) => {
-            console.error(err);
-        });
+        .populate("user", "userName", userModel);
+    }
+}
 
 
 // return array of playlists
