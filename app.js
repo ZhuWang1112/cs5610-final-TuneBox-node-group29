@@ -13,6 +13,7 @@ import SongPlaylistController from "./controllers/songPlaylist-controller.js";
 import session from "express-session";
 import SessionController from "./controllers/session-controller.js";
 import morgan from "morgan";
+import cookieParser from "cookie-parser";
 
 const app = express();
 
@@ -50,7 +51,7 @@ process.on('uncaughtException', (error) => {
     }, 10000).unref(); // unref() to allow the program to exit if this is the only active handle.
 });
 
-
+app.use(cookieParser());
 app.use(
     session({
         secret: "secret",
