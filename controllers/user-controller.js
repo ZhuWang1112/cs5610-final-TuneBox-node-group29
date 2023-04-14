@@ -37,6 +37,7 @@ const UserController = (app) => {
         // console.log(foundUser);
         if (foundUser) {
             req.session["currentUser"] = foundUser;
+            // console.log("login: Session ID:", req.session.id);
             res.json(foundUser);
         } else {
             res.sendStatus(404);

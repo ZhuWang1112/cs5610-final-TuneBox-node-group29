@@ -1,4 +1,6 @@
 import userModel from "./models/user-model.js";
+import followsModel from "./models/follows-model.js";
+import mongoose from "mongoose";
 
 // paginate query
 export const findUsersPagination = (page, limit) => {
@@ -37,12 +39,57 @@ export const deleteUser = (userId) => userModel.deleteOne({ _id: userId });
 export const countUsers = () => userModel.countDocuments({isDeleted: false});
 export const updateUser = async (userId, user) => {
     await userModel.updateOne({ _id: userId }, { $set: user });
-    const updatedUser = await userModel.findOne({ _id: userId });
-    return updatedUser;
+    return userModel.findOne({_id: userId});
 };
 
 // show on home page
-export const findTopUsers = () => userModel.find().limit(5);
+export const findTopUsers = async (uid) => {
+    if (uid === null) {
+        return userModel.find({isDeleted: false}).limit(5);
+    }
+    // console.log(typeof uid);
+    const followedUserIds = await followsModel
+        .findOne({ user: uid })
+        .select("followeeList -_id")
+        .lean()
+        .exec()
+        .then((doc) => doc.followeeList);
+
+    return await userModel
+        .aggregate([
+            {
+                $match: {
+                    $and: [
+                        { _id: { $nin: followedUserIds } },
+                        { _id: { $ne: new mongoose.Types.ObjectId(uid) } },
+                        { isDeleted: false },
+                    ],
+                },
+            },
+            {
+                $lookup: {
+                    from: "playlists",
+                    localField: "_id",
+                    foreignField: "user",
+                    as: "playlists",
+                },
+            },
+            {
+                $addFields: {
+                    numPlaylists: {$size: "$playlists"},
+                },
+            },
+            {
+                $sort: {
+                    numPlaylists: -1,
+                },
+            },
+            {
+                $limit: 5,
+            },
+        ])
+        .exec();
+}
 export const countVipUsers = () => userModel.countDocuments({ isVip: true, isDeleted: false });
 export const countFemaleUsers = () => userModel.countDocuments({ gender: "female", isDeleted: false });
 export const countMaleUsers = () => userModel.countDocuments({gender: "male", isDeleted: false });
