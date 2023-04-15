@@ -32,8 +32,8 @@ const findTopUsers = async (req, res) => {
     res.json(users);
 }
 export default (app) => {
-    app.get('/api/home/topmusic', checkVip,getTopMusic);
-    app.get('/api/home/topalbum', checkVip,getTopAlbum);
+    app.get('/api/home/topmusic', checkVip, getTopMusic);
+    app.get('/api/home/topalbum', checkVip, getTopAlbum);
     app.get('/api/home/topplaylists', findTopPlaylists);
     app.get('/api/home/topusers', findTopUsers);
 }

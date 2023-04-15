@@ -4,6 +4,7 @@ import { createEmptyLikedList } from "./like-controller.js"
 import { createEmptyFolloweeList } from "./follow-controller.js"
 import * as followDao from "../dao/follow-dao.js";
 import * as likeDao from "../dao/like-dao.js";
+import checkAdmin from "../middleWare/checkAdmin.js";
 
 const UserController = (app) => {
     // find all users
@@ -86,7 +87,14 @@ const UserController = (app) => {
         res.json(updatedUser);
     }
 
-
+    const checkLogin = async (req, res) => {
+        const user = req.session.currentUser;
+        if (user && user._id === req.params._id) {
+            res.json({login: true});
+        } else {
+            res.json({login: false});
+        }
+    }
 
     const countUsers = async (req, res) => {
         const count = await userDao.countUsers();
@@ -107,22 +115,23 @@ const UserController = (app) => {
         res.json(count);
     }
 
-    const findLastPageUsers = async (req, res) => {
+    const findLatestUsers = async (req, res) => {
         const limit = parseInt(req.query.limit, 10);
-        const users = await userDao.findLastPageUsers(limit);
+        const users = await userDao.findLatestUsers(limit);
         res.json(users);
     }
 
-    app.put('/api/users/admin/:_id', updateUserById);
-    app.delete('/api/users/admin/:_id', deleteUserById);
-    app.get('/api/users/admin/name/:username', findUserByName);
-    app.get('/api/users/admin/partialname/:username', findUserByPartialName);
-    app.get('/api/users/admin/pagination', findUsersPagination);
-    app.get('/api/users/admin/count', countUsers);
-    app.get('/api/users/admin/vip/count', countVipUsers);
-    app.get('/api/users/admin/female/count', countFemaleUsers);
-    app.get('/api/users/admin/male/count', countMaleUsers);
-    app.get('/api/users/admin/lastpage', findLastPageUsers);
+    app.get('/api/users/checkLogin/:_id', checkLogin);
+    app.put('/api/users/admin/:_id', checkAdmin, updateUserById);
+    app.delete('/api/users/admin/:_id', checkAdmin, deleteUserById);
+    app.get('/api/users/admin/name/:username', checkAdmin, findUserByName);
+    app.get('/api/users/admin/partialname/:username', checkAdmin, findUserByPartialName);
+    app.get('/api/users/admin/pagination', checkAdmin, findUsersPagination);
+    app.get('/api/users/admin/count', checkAdmin, countUsers);
+    app.get('/api/users/admin/vip/count', checkAdmin, countVipUsers);
+    app.get('/api/users/admin/female/count', checkAdmin, countFemaleUsers);
+    app.get('/api/users/admin/male/count', checkAdmin, countMaleUsers);
+    app.get('/api/users/admin/lastpage', checkAdmin, findLatestUsers);
 
 
     app.get('/api/users', findUsers);
