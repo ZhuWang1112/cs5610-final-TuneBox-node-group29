@@ -46,3 +46,5 @@ export const findPlaylistsPagination = (page, limit) => {
         .populate("user", "userName", userModel);
         // .populate("songs", "songName", songModel);
 }
+export const findLatestPlaylists = () =>
+    playlistModel.find().sort({ _id: -1 }).limit(5);

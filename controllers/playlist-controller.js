@@ -3,6 +3,8 @@ import * as songDao from "../dao/song-dao.js";
 import * as userDao from "../dao/user-dao.js";
 import * as likeDao from "../dao/like-dao.js";
 import * as songPlaylistDao from "../dao/songPlaylist-dao.js";
+import checkAdmin from "../middleWare/checkAdmin.js";
+
 // create a playlist
 const createPlaylist = async (req, res) => {
   const newPlaylist = req.body;
@@ -16,7 +18,10 @@ const findPlaylists = async (req, res) => {
   const playlists = await playlistDao.findAllPlaylists();
   res.json(playlists);
 };
-
+const  findLatestPlaylists = async (req, res) => {
+    const playlists = await playlistDao.findLatestPlaylists();
+    res.json(playlists);
+}
 // get all playlists of one user
 const findPlaylistByUser = async (req, res) => {
   const user = req.params.user;
@@ -82,7 +87,13 @@ const findSongsByPlaylistId = async (req, res) => {
 
 // new (remove all songs from likedSongs)
 const deletePlaylist = async (req, res) => {
-  const { _id, user } = req.body.playlistObj;
+  const { _id } = req.body.playlistObj;
+  // console.log("user:" + user);
+  // ***************
+  const pl = await playlistDao.findPlaylistById(_id);
+  const user = pl.user;
+  // console.log("user1" + pl.user);
+  //********************************
   // delete playlist from playlist
   await playlistDao.deletePlaylist(_id);
   const likeSongsToDelete = await songPlaylistDao.findSongsByPlaylistId(_id);
@@ -111,12 +122,12 @@ const countPlaylists = async (req, res) => {
   res.json(count);
 };
 
-// Return the latest registered user information
-const findLastPageUsers = async (req, res) => {
-  const limit = parseInt(req.query.limit, 10);
-  const lastPage = await playlistDao.findLastPageUsers(limit);
-  res.json(lastPage);
-};
+// Return the latest playlists information
+// const findLastPageUsers = async (req, res) => {
+//   const limit = parseInt(req.query.limit, 10);
+//   const lastPage = await playlistDao.findLastPageUsers(limit);
+//   res.json(lastPage);
+// };
 const findPlaylistsPagination = async (req, res) => {
   const page = parseInt(req.query.page, 10);
   const limit = parseInt(req.query.limit, 10);
@@ -164,10 +175,10 @@ const checkSongs = async (req, res) => {
 };
 
 export default (app) => {
-  app.get("/api/playlists/admin/count", countPlaylists);
-  app.get("/api/playlists/admin/lastpage", findLastPageUsers);
-  app.get("/api/playlists/admin/pagination", findPlaylistsPagination);
-  app.delete("/api/playlists/admin/:pid", deletePlaylist);
+  app.get("/api/playlists/admin/count", checkAdmin, countPlaylists);
+  app.get("/api/playlists/admin/lastpage", checkAdmin, findLatestPlaylists);
+  app.get("/api/playlists/admin/pagination", checkAdmin, findPlaylistsPagination);
+  app.delete("/api/playlists/admin/:pid", checkAdmin, deletePlaylist);
 
   app.get("/api/playlists", findPlaylists);
   app.get("/api/playlists/:user", findPlaylistByUser);
