@@ -2,6 +2,7 @@ import TopMusic from '../TopMusic/TopMusic.json' assert { type: 'json' };
 import TopAlbum from '../TopAlbum/TopAlbum.json' assert { type: 'json' };
 import * as playlistDao from "../dao/playlist-dao.js";
 import * as userDao from "../dao/user-dao.js";
+import checkVip from "../middleWare/checkVip.js";
 const getTopMusic = (req, res) => {
     res.json(TopMusic);
 }
@@ -31,8 +32,8 @@ const findTopUsers = async (req, res) => {
     res.json(users);
 }
 export default (app) => {
-    app.get('/api/home/topmusic', getTopMusic);
-    app.get('/api/home/topalbum', getTopAlbum);
+    app.get('/api/home/topmusic', checkVip,getTopMusic);
+    app.get('/api/home/topalbum', checkVip,getTopAlbum);
     app.get('/api/home/topplaylists', findTopPlaylists);
     app.get('/api/home/topusers', findTopUsers);
 }

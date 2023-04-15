@@ -82,7 +82,13 @@ const findSongsByPlaylistId = async (req, res) => {
 
 // new (remove all songs from likedSongs)
 const deletePlaylist = async (req, res) => {
-  const { _id, user } = req.body.playlistObj;
+  const { _id } = req.body.playlistObj;
+  // console.log("user:" + user);
+  // ***************
+  const pl = await playlistDao.findPlaylistById(_id);
+  const user = pl.user;
+  // console.log("user1" + pl.user);
+  //********************************
   // delete playlist from playlist
   await playlistDao.deletePlaylist(_id);
   const likeSongsToDelete = await songPlaylistDao.findSongsByPlaylistId(_id);
