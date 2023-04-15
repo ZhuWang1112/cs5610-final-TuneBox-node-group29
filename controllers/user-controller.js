@@ -135,6 +135,7 @@ const UserController = (app) => {
 
 
     app.get('/api/users', findUsers);
+    app.put("/api/users/:_id", updateUserById);
     app.get('/api/users/:_id', findUserById);
 
     app.post("/api/users/login", login);
