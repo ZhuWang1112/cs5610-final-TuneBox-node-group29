@@ -8,7 +8,7 @@ export const createComment = (comment) => commentModel.create(comment);
 export const findCommentsByPlaylist = (pid) => {
   return commentModel
     .find({ playlist: pid })
-    .populate("user", ["img", "userName"], userModel);
+    .populate("user", ["img", "userName", "isVip"], userModel);
 };
 export const findCommentNumberByPlaylist = (pid) =>
   commentModel.countDocuments({ playlist: pid });
