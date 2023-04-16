@@ -14,9 +14,18 @@ const UserController = (app) => {
     }
 // find an user object by id
     const findUserById = async (req, res) => {
-        const user = await userDao.findUserById(req.params._id);
-        res.json(user);
-    }
+      const user = await userDao.findUserById(req.params._id);
+      res.json(user);
+    };
+
+    const findCurrentUser = async (req, res) => {
+      let uid = null;
+      if (req.session.currentUser) {
+        uid = req.session.currentUser._id;
+      }
+      const user = await userDao.findUserById(uid);
+      res.json(user);
+    };
 
     const deleteUserById = async (req, res) => {
       const userIdToDelete = req.params._id;
@@ -138,6 +147,7 @@ const UserController = (app) => {
     app.get("/api/users/admin/lastpage", checkAdmin, findLatestUsers);
 
     app.get("/api/users", findUsers);
+    app.get("/api/users/currentUser", findCurrentUser);
     app.put("/api/users/:_id", updateUserById);
     app.get("/api/users/:_id", findUserById);
     

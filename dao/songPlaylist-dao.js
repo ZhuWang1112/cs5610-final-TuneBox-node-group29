@@ -9,3 +9,4 @@ export const deleteSongPlaylistById = (playlistId) =>
   songPlayModel.deleteMany({ playlistId: playlistId });
 export const findSongsByPlaylistId = (playlistId) =>
   songPlayModel.find({ playlistId: playlistId });
+export const findSongNumbersByUserId = (userId) => songPlayModel.countDocuments({userId: userId})
