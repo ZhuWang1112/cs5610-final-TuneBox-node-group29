@@ -29,9 +29,18 @@ const findSongsByPlaylistId = async (req, res) => {
   res.json(songPlaylistObj);
 };
 
+const findSongNumbersByUserId = async (req, res) => {
+  const songNumbers = await songPlaylistDao.findSongNumbersByUserId(
+    req.params.uid
+  );
+  console.log("songNumbers, ", songNumbers);
+  res.json(songNumbers);
+};
+
 export default (app) => {
+  app.get("/api/songPlaylist/songNumber/:uid", findSongNumbersByUserId);
   app.get("/api/songPlaylist/:userId/:songId", findPlaylistByUserSong);
+  app.get("/api/songPlaylist/:pid", findSongsByPlaylistId);
   app.delete("/api/songPlaylist/:userId/:songId", deleteSongPlaylist);
   app.post("/api/songPlaylist", createSongPlaylistOfUser);
-  app.get("/api/songPlaylist/:pid", findSongsByPlaylistId);
 };
