@@ -14,6 +14,7 @@ const createSong = async (req, res) => {
   res.json(insertedSong);
 };
 
+// SongController
 export default (app) => {
   app.get("/api/songs", findSongByIds);
   app.post("/api/songs", createSong);
