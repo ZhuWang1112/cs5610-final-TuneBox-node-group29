@@ -1,6 +1,11 @@
 import axios from "axios";
 
-
+// ms to "minutes : seconds"
+function formatTime(ms) {
+    let minutes = Math.floor(ms / 60000);
+    let seconds = ((ms % 60000) / 1000).toFixed(0);
+    return minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+}
 const getTrack = async (req,res) => {
     const options = {
         method: 'GET',
@@ -26,13 +31,12 @@ const getAlbumsByArtistId = async (req,res) => {
         }
     };
     const response = await axios.request(options);
-    // console.log("hello +++" + JSON.stringify(response.data));
     let n = response.data.data.artist.discography.albums.totalCount;
     let albums = [];
     for(let i = 0; i < n; i++){
         albums[i] = {
             apiAlbumId: response.data.data.artist.discography.albums.items[i].releases.items[0].id,
-            title: response.data.data.artist.discography.albums.items[i].releases.items[0].name,
+            title: response.data.data.artist.discography.albums.items[i].releases.items[0].name, // album name
             img: response.data.data.artist.discography.albums.items[i].releases.items[0].coverArt.sources[0].url,
             date: response.data.data.artist.discography.albums.items[i].releases.items[0].date.year,
             tracksNum: response.data.data.artist.discography.albums.items[i].releases.items[0].tracks.totalCount,
@@ -52,10 +56,7 @@ const getTracksByAlbumId = async (req,res) => {
         }
     };
     const response = await axios.request(options);
-    // console.log("hello +++" + JSON.stringify(response.data));
-
     let n = response.data.albums[0].total_tracks;
-
     let tracks = [];
     for(let i = 0; i < n; i++){
         tracks[i] = {
@@ -64,7 +65,8 @@ const getTracksByAlbumId = async (req,res) => {
             artist: response.data.albums[0].tracks.items[i].artists[0].name,
             apiArtistId: response.data.albums[0].tracks.items[i].artists[0].id,
             songName: response.data.albums[0].tracks.items[i].name,
-            duration: response.data.albums[0].tracks.items[i].duration_ms,
+            duration: formatTime(response.data.albums[0].tracks.items[i].duration_ms),
+            img:response.data.albums[0].images[0].url,
         }
     }
     res.json(tracks);
