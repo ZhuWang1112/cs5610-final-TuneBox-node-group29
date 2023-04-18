@@ -15,7 +15,7 @@ const userSchema = new mongoose.Schema(
     },
     isAdmin: { type: Boolean, default: false },
     isVip: { type: Boolean, default: false },
-    playlistsCount: { type: Number, default: 1 },
+    playlistsCount: { type: Number, default: 0 },
     img: { type: String, default: "/images/profile-avatar.jpeg" },
     createTime: { type: Date, default: Date.now },
     isDeleted: { type: Boolean, default: false },
