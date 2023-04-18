@@ -15,6 +15,7 @@ import SessionController from "./controllers/session-controller.js";
 import morgan from "morgan";
 import cookieParser from "cookie-parser";
 import RemoteApiController from "./controllers/remoteApi-controller.js";
+import ArtistController from "./controllers/artist-controller.js"
 
 const app = express();
 
@@ -82,5 +83,6 @@ SongController(app);
 SessionController(app);
 SongPlaylistController(app);
 HomeController(app);
+ArtistController(app);
 app.listen(process.env.PORT || 4000)
 // app.listen(4000)
