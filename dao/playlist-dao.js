@@ -39,12 +39,62 @@ export const findLastPageUsers = async (limit) => {
     return findPlaylistsPagination(lastPage, limit);
 }
 
-//Relational query
-export const findPlaylistsPagination = (page, limit) => {
-    const skipIndex = (page - 1) * limit;
-    return playlistModel.find().skip(skipIndex).limit(limit)
-        .populate("user", "userName", userModel);
-        // .populate("songs", "songName", songModel);
-}
-export const findLatestPlaylists = () =>
-    playlistModel.find().sort({ _id: -1 }).limit(5).populate("user", "userName", userModel);
+// Relational query
+// find and insert all songs in playlist
+export const findPlaylistsPagination = async (page, limit) => {
+    try {
+        const skipIndex = (page - 1) * limit;
+        const playlists = await playlistModel.find().skip(skipIndex).limit(limit)
+            .populate("user", "userName", userModel)
+            .exec();
+
+        const updatedPlaylists = await Promise.all(
+            playlists.map(async (playlist) => {
+                const songs = await songPlayModel
+                    .find({ playlistId: playlist._id })
+                    .populate("songId", "songName", songModel)
+                    .exec();
+                return {
+                    ...playlist.toObject(),
+                    songs: songs
+                };
+            })
+        );
+        return updatedPlaylists;
+    } catch (error) {
+        console.error(error);
+        throw error;
+    }
+};
+
+// insert song to playlist
+export const findLatestPlaylists = async () => {
+    try {
+        const playlists = await playlistModel
+            .find()
+            .sort({ _id: -1 })
+            .limit(5)
+            .populate("user", "userName", userModel)
+            .exec();
+
+        const updatedPlaylists = await Promise.all(
+            playlists.map(async (playlist) => {
+                const songs = await songPlayModel
+                    .find({ playlistId: playlist._id })
+                    .populate("songId", "songName", songModel)
+                    .exec();
+                return {
+                    ...playlist.toObject(),
+                    songs: songs
+                };
+            })
+        );
+
+        return updatedPlaylists;
+    } catch (error) {
+        console.error(error);
+        throw error;
+    }
+};
+
+
