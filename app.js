@@ -14,6 +14,7 @@ import session from "express-session";
 import SessionController from "./controllers/session-controller.js";
 import morgan from "morgan";
 import cookieParser from "cookie-parser";
+import RemoteApiController from "./controllers/remoteApi-controller.js";
 
 const app = express();
 
@@ -71,6 +72,7 @@ app.use((req, res, next) => {
     console.log("Session ID:", req.session.id);
     next();
 });
+RemoteApiController(app);
 PlaylistController(app);
 UserController(app);
 FollowController(app);
