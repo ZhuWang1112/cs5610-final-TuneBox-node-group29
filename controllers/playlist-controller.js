@@ -96,17 +96,20 @@ const deletePlaylist = async (req, res) => {
   //********************************
   // delete playlist from playlist
   await playlistDao.deletePlaylist(_id);
-  const likeSongsToDelete = await songPlaylistDao.findSongsByPlaylistId(_id);
-  const songIds = likeSongsToDelete.map((song) => song.songId.toString());
   // delete all records in songPlaylist associate with the playlist
   await songPlaylistDao.deleteSongPlaylistById(_id);
   // delete songs in likedSongs
-  const likedObj = await likeDao.findLikedSongsByUser(user);
-  likedObj[0].likedSongs = likedObj[0].likedSongs.filter(
-    (s) => !songIds.includes(s.toString())
-  );
-  await likeDao.updateLikedSongs(user, likedObj[0]);
-  res.json(likedObj[0]);
+  // const likedObj = await likeDao.findLikedSongsByUser(user);
+  // likedObj[0].likedSongs = likedObj[0].likedSongs.filter(
+  //   (s) => !songIds.includes(s.toString())
+  // );
+  // await likeDao.updateLikedSongs(user, likedObj[0]);
+  // res.json(likedObj[0]);
+
+  // find remaining likedSongs
+  const data = await songPlaylistDao.findSongsByUserId(user);
+  const songList = data.map((song) => song.songId);
+  res.json(songList);
 };
 
 // update playlist by id

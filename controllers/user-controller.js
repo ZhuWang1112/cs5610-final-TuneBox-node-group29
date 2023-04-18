@@ -1,6 +1,6 @@
 import * as userDao from "../dao/user-dao.js"
 import alert from 'alert'
-import { createEmptyLikedList } from "./like-controller.js"
+// import { createEmptyLikedList } from "./like-controller.js"
 import { createEmptyFolloweeList } from "./follow-controller.js"
 import * as followDao from "../dao/follow-dao.js";
 import * as likeDao from "../dao/like-dao.js";
