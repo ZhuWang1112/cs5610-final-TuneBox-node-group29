@@ -1,7 +1,6 @@
 import * as playlistDao from "../dao/playlist-dao.js"
 import * as songDao from "../dao/song-dao.js";
 import * as userDao from "../dao/user-dao.js";
-import * as likeDao from "../dao/like-dao.js";
 import * as songPlaylistDao from "../dao/songPlaylist-dao.js";
 import checkAdmin from "../middleWare/checkAdmin.js";
 
@@ -149,45 +148,49 @@ const findDefaultPlaylistByUser = async (req, res) => {
   res.json(playlists[0]);
 };
 
-const checkSongs = async (req, res) => {
-  const { loginUser, playlist } = req.params;
-  console.log("loginUser: ", loginUser === "null");
-  // get likedSongs object list of targetUser
-  let LikedsongsOfLoginUser = [];
-  if (loginUser !== "null") {
-    const LikedSongs = await likeDao.findLikedSongsByUser(loginUser);
-    LikedsongsOfLoginUser = LikedSongs[0].likedSongs;
-    console.log("fetch");
-  }
-  console.log("LikedsongsOfLoginUser", LikedsongsOfLoginUser);
+// const checkSongs = async (req, res) => {
+//   const { loginUser, playlist } = req.params;
+//   console.log("loginUser: ", loginUser === "null");
+//   // get likedSongs object list of targetUser
+//   let LikedsongsOfLoginUser = [];
+//   if (loginUser !== "null") {
+//     const LikedSongs = await likeDao.findLikedSongsByUser(loginUser);
+//     LikedsongsOfLoginUser = LikedSongs[0].likedSongs;
+//     console.log("fetch");
+//   }
+//   console.log("LikedsongsOfLoginUser", LikedsongsOfLoginUser);
 
-  // find songs in songPlaylist
-  const songPlaylistObj = await songPlaylistDao.findSongsByPlaylistId(playlist);
-  const songList = songPlaylistObj.map((item) => item.songId);
-  const songs = await songDao.findSongByIds(songList); // to be return
-  console.log("songs: ", songs);
-  const exist = songs.map((song, id) => {
-    const index = LikedsongsOfLoginUser.indexOf(song._id);
-    return index === -1 ? false : true;
-  });
+//   // find songs in songPlaylist
+//   const songPlaylistObj = await songPlaylistDao.findSongsByPlaylistId(playlist);
+//   const songList = songPlaylistObj.map((item) => item.songId);
+//   const songs = await songDao.findSongByIds(songList); // to be return
+//   console.log("songs: ", songs);
+//   const exist = songs.map((song, id) => {
+//     const index = LikedsongsOfLoginUser.indexOf(song._id);
+//     return index === -1 ? false : true;
+//   });
 
-  res.json({
-    songs: songs,
-    checkSong: exist,
-  });
-};
+//   res.json({
+//     songs: songs,
+//     checkSong: exist,
+//   });
+// };
 
 export default (app) => {
   app.get("/api/playlists/admin/count", checkAdmin, countPlaylists);
   app.get("/api/playlists/admin/lastpage", checkAdmin, findLatestPlaylists);
-  app.get("/api/playlists/admin/pagination", checkAdmin, findPlaylistsPagination);
+  app.get(
+    "/api/playlists/admin/pagination",
+    checkAdmin,
+    findPlaylistsPagination
+  );
   app.delete("/api/playlists/admin/:pid", checkAdmin, deletePlaylist);
 
   app.get("/api/playlists", findPlaylists);
   app.get("/api/playlists/:user", findPlaylistByUser);
   app.get("/api/playlists/details/:pid", findPlaylistDetailsById);
   app.get("/api/playlists/songs/:pid", findSongsByPlaylistId);
-  app.get("/api/playlists/:loginUser/:playlist", checkSongs);
+  // app.get("/api/playlists/:loginUser/:playlist", checkSongs);
   app.get("/api/playlistsdefault/:uid", findDefaultPlaylistByUser);
   app.delete("/api/playlists", deletePlaylist);
   app.post("/api/playlists", createPlaylist);
