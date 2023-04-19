@@ -36,6 +36,20 @@ const ArtistController = (app) => {
         });
     }
 
+    const findSongsByArtistApiId = async (req, res) => {
+        const songs = await songDao.findSongsByApiArtistId(req.params.api);
+        const artist = await artistDao.findArtistByArtistId(req.params.api);
+        console.log(artist);
+
+        res.json({
+            playlist: {
+                songs: songs,
+                user: "None",
+            },
+            artist: artist
+        });
+    }
+
     const createArtist = async (req, res) => {
         const artist = await artistDao.createArtist(req.body);
         res.json(artist);
@@ -52,6 +66,7 @@ const ArtistController = (app) => {
     app.get('/api/artists/details/:name', findDetailsByArtist);
     app.get('/api/artists/:_id', findArtistById);
     app.get('/api/artist/detailsPlayList/:name', findPlayListByArtistName);
+    app.get('/api/artist/artistSongs/:api', findSongsByArtistApiId)
     app.delete('/api/artists/admin/:_id', deleteArtistById);
 }
 
