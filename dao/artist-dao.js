@@ -4,6 +4,7 @@ import songModel from "./models/song-model.js"
 export const findAllArtist = () => artistModel.find();
 export const findArtistById = (ids) => artistModel.findOne({ _id: { $in: ids } });
 export const findArtistByName = (name) => artistModel.findOne({ name: name });
+export const findArtistByArtistId = (api) => artistModel.findOne({ api: api });
 export const findDetailsByArtist = (artistName) => {
     const result = songModel.aggregate([
     {
