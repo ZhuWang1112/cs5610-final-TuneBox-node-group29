@@ -24,6 +24,5 @@ const findSongsByApiArtistId = async (req, res) => {
 export default (app) => {
   app.get("/api/songs", findSongByIds);
   app.post("/api/songs", createSong);
-
-  app.get("/api/songs/:apiArtistId", findSongsByApiArtistId);
+  app.get("/api/songsOfArtist/:apiArtistId", findSongsByApiArtistId);
 };
