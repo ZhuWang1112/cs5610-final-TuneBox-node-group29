@@ -1,4 +1,5 @@
 import * as songDao from "../dao/song-dao.js"
+import {findSongs} from "../dao/song-dao.js";
 
 // find a song object by id
 const findSongByIds = async (req, res) => {
@@ -14,7 +15,15 @@ const createSong = async (req, res) => {
   res.json(insertedSong);
 };
 
+const findSongsByApiArtistId = async (req, res) => {
+    const apiArtistId = req.params.apiArtistId;
+    const songs = await songDao.findSongsByApiArtistId(apiArtistId);
+    res.json(songs);
+}
+
 export default (app) => {
   app.get("/api/songs", findSongByIds);
   app.post("/api/songs", createSong);
+
+  app.get("/api/songs/:apiArtistId", findSongsByApiArtistId);
 };
