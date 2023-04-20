@@ -1,5 +1,7 @@
 import axios from "axios";
 
+const key0 = '6ff24f57efmshbf038dd3fa89810p1cf523jsn233a6ee00de2';
+
 // ms to "minutes : seconds"
 function formatTime(ms) {
     let minutes = Math.floor(ms / 60000);
@@ -12,7 +14,7 @@ const getTrack = async (req,res) => {
         url: 'https://spotify23.p.rapidapi.com/tracks/',
         params: {ids: req.params.apiSongId},
         headers: {
-            'X-RapidAPI-Key': '230ac653ebmsh094464f7969dbdbp1121a1jsnc05a7bf66309',
+            'X-RapidAPI-Key': key0,
             'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
         }
     };
@@ -26,7 +28,7 @@ const getAlbumsByArtistId = async (req,res) => {
         url: 'https://spotify23.p.rapidapi.com/artist_albums/',
         params: {id: req.params.apiArtistId, offset: '0', limit: '100'},
         headers: {
-            'X-RapidAPI-Key': '230ac653ebmsh094464f7969dbdbp1121a1jsnc05a7bf66309',
+            'X-RapidAPI-Key': key0,
             'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
         }
     };
@@ -43,7 +45,7 @@ const getAlbumsByArtistId = async (req,res) => {
             url: 'https://spotify23.p.rapidapi.com/artist_overview/',
             params: {id: req.params.apiArtistId},
             headers: {
-                'X-RapidAPI-Key': '230ac653ebmsh094464f7969dbdbp1121a1jsnc05a7bf66309',
+                'X-RapidAPI-Key': key0,
                 'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
             }
         };
@@ -81,7 +83,7 @@ const getTracksByAlbumId = async (req,res) => {
         url: 'https://spotify23.p.rapidapi.com/albums/',
         params: {ids: req.params.apiAlbumId},
         headers: {
-            'X-RapidAPI-Key': '230ac653ebmsh094464f7969dbdbp1121a1jsnc05a7bf66309',
+            'X-RapidAPI-Key': key0,
             'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
         }
     };

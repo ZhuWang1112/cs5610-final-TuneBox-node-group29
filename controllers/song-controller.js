@@ -21,9 +21,15 @@ const findSongsByApiArtistId = async (req, res) => {
     res.json(songs);
 }
 
+const insertSongIfNotExist = async (req, res) => {
+  const status = await songDao.insertSongIfNotExist(req.body);
+  const song = await songDao.findSongByApiSongId(req.body.apiSongId);
+  res.json(song);
+};
+
 export default (app) => {
   app.get("/api/songs", findSongByIds);
   app.post("/api/songs", createSong);
-
-  app.get("/api/songs/:apiArtistId", findSongsByApiArtistId);
+  app.get("/api/songsOfArtist/:apiArtistId", findSongsByApiArtistId);
+  app.put("/api/songs", insertSongIfNotExist);
 };
