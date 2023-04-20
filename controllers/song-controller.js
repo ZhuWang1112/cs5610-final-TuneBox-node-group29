@@ -16,10 +16,10 @@ const createSong = async (req, res) => {
 };
 
 const findSongsByApiArtistId = async (req, res) => {
-    const apiArtistId = req.params.apiArtistId;
-    const songs = await songDao.findSongsByApiArtistId(apiArtistId);
-    res.json(songs);
-}
+  const apiArtistId = req.params.apiArtistId;
+  const songs = await songDao.findSongsByApiArtistId(apiArtistId);
+  res.json(songs);
+};
 
 const insertSongIfNotExist = async (req, res) => {
   const status = await songDao.insertSongIfNotExist(req.body);
