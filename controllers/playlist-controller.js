@@ -2,6 +2,7 @@ import * as playlistDao from "../dao/playlist-dao.js"
 import * as songDao from "../dao/song-dao.js";
 import * as userDao from "../dao/user-dao.js";
 import * as songPlaylistDao from "../dao/songPlaylist-dao.js";
+import * as commentDao from "../dao/comment-dao.js";
 import checkAdmin from "../middleWare/checkAdmin.js";
 import * as artistDao from "../dao/artist-dao.js";
 
@@ -18,10 +19,10 @@ const findPlaylists = async (req, res) => {
   const playlists = await playlistDao.findAllPlaylists();
   res.json(playlists);
 };
-const  findLatestPlaylists = async (req, res) => {
-    const playlists = await playlistDao.findLatestPlaylists();
-    res.json(playlists);
-}
+const findLatestPlaylists = async (req, res) => {
+  const playlists = await playlistDao.findLatestPlaylists();
+  res.json(playlists);
+};
 // get all playlists of one user
 const findPlaylistByUser = async (req, res) => {
   const user = req.params.user;
@@ -98,13 +99,8 @@ const deletePlaylist = async (req, res) => {
   await playlistDao.deletePlaylist(_id);
   // delete all records in songPlaylist associate with the playlist
   await songPlaylistDao.deleteSongPlaylistById(_id);
-  // delete songs in likedSongs
-  // const likedObj = await likeDao.findLikedSongsByUser(user);
-  // likedObj[0].likedSongs = likedObj[0].likedSongs.filter(
-  //   (s) => !songIds.includes(s.toString())
-  // );
-  // await likeDao.updateLikedSongs(user, likedObj[0]);
-  // res.json(likedObj[0]);
+  // delete all comments related to the playlist
+  await commentDao.deleteComment({ playlist: _id });
 
   // find remaining likedSongs
   const data = await songPlaylistDao.findSongsByUserId(user);
