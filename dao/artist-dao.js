@@ -1,9 +1,31 @@
 import artistModel from "./models/artist-model.js"
 import songModel from "./models/song-model.js"
+import playlistModel from "./models/playlist-model.js";
 
 export const findAllArtist = () => artistModel.find();
 export const findArtistById = (ids) => artistModel.findOne({ _id: { $in: ids } });
 export const findArtistByName = (name) => artistModel.findOne({ name: name });
+
+// export const findDAOLocalArtistByName =  (name) => {
+//     const artist =  artistModel.findOne({name: name});
+//
+//     return artist;
+// }
+export const findDAOLocalArtistByName = (name) => {
+    // Create a regex pattern for fuzzy matching
+    const fuzzyRegex = new RegExp(name.split('').join('.*'), 'i');
+
+    const artist = artistModel.findOne({
+        name: {
+            $regex: fuzzyRegex
+        }
+    });
+
+    return artist;
+};
+
+
+
 // export const findArtistByName = async ({search}) => {
 //     const artist = await artistModel.findOne({name: search});
 //     return artist;

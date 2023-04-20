@@ -26,7 +26,21 @@ export const createSong = (song) => songModel.create(song);
 export const findSongByArtist = (artist) => songModel.find({ artist: { $in: artist } });
 
 
-export const findSongByName =  (name) => {
-    const song =  songModel.findOne({songName: name});
+// export const findSongByName =  (name) => {
+//     const song =  songModel.findOne({songName: name});
+//     return song;
+// }
+
+export const findSongByName = (name) => {
+    // Create a regex pattern for fuzzy matching
+    const fuzzyRegex = new RegExp(name.split('').join('.*'), 'i');
+
+    const song = songModel.findOne({
+        songName: {
+            $regex: fuzzyRegex
+        }
+    });
+
     return song;
-}
+};
+

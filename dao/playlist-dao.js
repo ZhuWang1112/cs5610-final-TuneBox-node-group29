@@ -3,6 +3,7 @@ import userModel from "./models/user-model.js";
 import songModel from "./models/song-model.js";
 import songPlayModel from "./models/songPlaylist-model.js";
 import mongoose from "mongoose";
+import artistModel from "./models/artist-model.js";
 
 
 // show on home page
@@ -97,10 +98,24 @@ export const findLatestPlaylists = async () => {
     }
 };
 
-export const findPlaylistByName =  (name) => {
-    const playlist =  playlistModel.findOne({playListName: name});
+// export const findPlaylistByName =  (name) => {
+//     const playlist =  playlistModel.findOne({playListName: name});
+//     return playlist;
+// }
+
+export const findPlaylistByName = (name) => {
+    // Create a regex pattern for fuzzy matching
+    const fuzzyRegex = new RegExp(name.split('').join('.*'), 'i');
+
+    const playlist = playlistModel.findOne({
+        playListName: {
+            $regex: fuzzyRegex
+        }
+    });
+
     return playlist;
-}
+};
+
 
 
 
