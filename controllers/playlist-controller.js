@@ -150,7 +150,16 @@ const findDefaultPlaylistByUser = async (req, res) => {
 };
 
 
-
+const findPlaylistByName = async (req, res) => {
+  const searchObj = req.body;
+  console.log("ffffffff: ", searchObj)
+  const foundPlaylists = await playlistDao.findPlaylistByName(searchObj.name);
+  if (foundPlaylists) {
+    res.json(foundPlaylists);
+  } else {
+    res.sendStatus(404);
+  }
+};
 
 // const checkSongs = async (req, res) => {
 //   const { loginUser, playlist } = req.params;
@@ -182,15 +191,7 @@ const findDefaultPlaylistByUser = async (req, res) => {
 
 export default (app) => {
 
-  const findPlaylistByName = async (req, res) => {
-    const searchObj = req.body;
-    const foundPlaylists = await playlistDao.findPlaylistByName(searchObj);
-    if (foundPlaylists) {
-      res.json(foundPlaylists);
-    } else {
-      res.sendStatus(404);
-    }
-  };
+
 
   app.get("/api/playlists/admin/count", checkAdmin, countPlaylists);
   app.get("/api/playlists/admin/lastpage", checkAdmin, findLatestPlaylists);
@@ -211,5 +212,5 @@ export default (app) => {
   app.post("/api/playlists", createPlaylist);
   app.put("/api/playlists/:pid", updatePlaylist);
 
-  app.post("/api/playlists", findPlaylistByName);
+  app.post("/api/local-playlists", findPlaylistByName);
 };

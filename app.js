@@ -7,7 +7,6 @@ import PlaylistController from "./controllers/playlist-controller.js";
 import UserController from "./controllers/user-controller.js";
 import FollowController from "./controllers/follow-controller.js";
 import CommentController from "./controllers/comment-controller.js";
-import ArtistController from "./controllers/artist-controller.js";
 // import LikedSongsController from "./controllers/like-controller.js";
 import SongController from "./controllers/song-controller.js";
 import SongPlaylistController from "./controllers/songPlaylist-controller.js";
@@ -16,6 +15,7 @@ import SessionController from "./controllers/session-controller.js";
 import morgan from "morgan";
 import cookieParser from "cookie-parser";
 import RemoteApiController from "./controllers/remoteApi-controller.js";
+import ArtistController from "./controllers/artist-controller.js"
 
 const app = express();
 
@@ -84,6 +84,5 @@ SessionController(app);
 SongPlaylistController(app);
 HomeController(app);
 ArtistController(app);
-
 app.listen(process.env.PORT || 4000)
 // app.listen(4000)

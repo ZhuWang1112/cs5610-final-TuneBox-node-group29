@@ -1,5 +1,6 @@
 import * as songDao from "../dao/song-dao.js"
 import {findSongs} from "../dao/song-dao.js";
+// import * as artistDao from "../dao/artist-dao.js";
 
 // find a song object by id
 const findSongByIds = async (req, res) => {
@@ -26,6 +27,11 @@ const insertSongIfNotExist = async (req, res) => {
   const song = await songDao.findSongByApiSongId(req.body.apiSongId);
   res.json(song);
 };
+
+const findSongsByName = async (req, res) => {
+  const artist = await songDao.findSongsByName(req.params.name);
+  res.json(artist);
+}
 
 export default (app) => {
   app.get("/api/songs", findSongByIds);

@@ -97,9 +97,11 @@ export const findLatestPlaylists = async () => {
     }
 };
 
-export const findPlaylistByName = async ({search}) => {
-    const playlist = await playlistModel.findOne({playListName: search});
+export const findPlaylistByName =  (name) => {
+    const playlist =  playlistModel.findOne({playListName: name});
     return playlist;
 }
+
+
 
 
