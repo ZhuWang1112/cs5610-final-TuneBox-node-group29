@@ -1,5 +1,6 @@
 import * as songDao from "../dao/song-dao.js"
 import {findSongs} from "../dao/song-dao.js";
+import * as playlistDao from "../dao/playlist-dao.js";
 // import * as artistDao from "../dao/artist-dao.js";
 
 // find a song object by id
@@ -22,20 +23,30 @@ const findSongsByApiArtistId = async (req, res) => {
   res.json(songs);
 };
 
+const findSongByName = async (req, res) => {
+  const searchObj = req.body;
+  // console.log("ffffffff: ", searchObj)
+  const foundSongs = await songDao.findSongByName(searchObj.name);
+  if (foundSongs) {
+    res.json(foundSongs);
+  } else {
+    res.sendStatus(404);
+  }
+};
+
 const insertSongIfNotExist = async (req, res) => {
   const status = await songDao.insertSongIfNotExist(req.body);
   const song = await songDao.findSongByApiSongId(req.body.apiSongId);
   res.json(song);
 };
 
-const findSongsByName = async (req, res) => {
-  const artist = await songDao.findSongsByName(req.params.name);
-  res.json(artist);
-}
+
 
 export default (app) => {
   app.get("/api/songs", findSongByIds);
   app.post("/api/songs", createSong);
   app.get("/api/songsOfArtist/:apiArtistId", findSongsByApiArtistId);
   app.put("/api/songs", insertSongIfNotExist);
+
+  app.post("/api/local-songs", findSongByName);
 };

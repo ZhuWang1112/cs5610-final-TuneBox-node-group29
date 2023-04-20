@@ -1,5 +1,6 @@
 import * as artistDao from "../dao/artist-dao.js"
 import * as songDao from "../dao/song-dao.js";
+import * as playlistDao from "../dao/playlist-dao.js";
 
 console.log("controller");
 
@@ -17,6 +18,17 @@ const ArtistController = (app) => {
     const findArtistByName = async (req, res) => {
         const artist = await artistDao.findArtistByName(req.params.name);
         res.json(artist);
+    }
+
+    const findLocalArtistByName = async (req, res) => {
+        const searchObj = req.body;
+        // console.log("ffffffff: ", searchObj)
+        const foundArtists = await artistDao.findArtistByName(searchObj.name);
+        if (foundArtists) {
+            res.json(foundArtists);
+        } else {
+            res.sendStatus(404);
+        }
     }
     const findDetailsByArtist = async (req, res) => {
         const artist = await artistDao.findDetailsByArtist(req.params.name);
@@ -71,6 +83,8 @@ const ArtistController = (app) => {
     app.get("/api/artist/artistSongs/:api", findSongsByArtistApiId);
     app.delete("/api/artists/admin/:_id", deleteArtistById);
     app.put("/api/artists", insertArtistIfNotExist);
+
+    app.post("/api/local-artists", findLocalArtistByName);
 }
 
 export default ArtistController;

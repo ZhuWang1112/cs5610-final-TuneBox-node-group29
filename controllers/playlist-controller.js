@@ -152,7 +152,7 @@ const findDefaultPlaylistByUser = async (req, res) => {
 
 const findPlaylistByName = async (req, res) => {
   const searchObj = req.body;
-  console.log("ffffffff: ", searchObj)
+  // console.log("ffffffff: ", searchObj)
   const foundPlaylists = await playlistDao.findPlaylistByName(searchObj.name);
   if (foundPlaylists) {
     res.json(foundPlaylists);

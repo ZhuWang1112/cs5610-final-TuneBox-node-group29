@@ -1,5 +1,6 @@
 import songModel from "./models/song-model.js";
 import artistModel from "./models/artist-model.js";
+import playlistModel from "./models/playlist-model.js";
 
 export async function findSongsByApiArtistId(apiArtistId) {
     return songModel.find({ apiArtistId: apiArtistId });
@@ -24,4 +25,8 @@ export const findSongByIds = (ids) => songModel.find({ _id: { $in: ids } });
 export const createSong = (song) => songModel.create(song);
 export const findSongByArtist = (artist) => songModel.find({ artist: { $in: artist } });
 
-export const findSongsByName = (name) => songModel.findOne({ songName: name });
+
+export const findSongByName =  (name) => {
+    const song =  songModel.findOne({songName: name});
+    return song;
+}
