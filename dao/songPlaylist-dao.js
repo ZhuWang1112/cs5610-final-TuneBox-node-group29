@@ -13,7 +13,7 @@ export const findSongsByPlaylistId = (playlistId) =>
     .find({ playlistId: playlistId })
     .populate(
       "songId",
-      ["apiSongId", "img", "artist", "songName", "duration"],
+      ["apiSongId", "img", "artist", "songName", "duration", "apiArtistId"],
       songModel
     );
 export const findSongNumbersByUserId = (userId) =>
@@ -23,7 +23,7 @@ export const findSongsByUserId = (userId) =>
     .find({ userId: userId })
     .populate(
       "songId",
-      ["apiSongId", "img", "artist", "songName", "duration"],
+      ["apiSongId", "img", "artist", "songName", "duration", "apiArtistId"],
       songModel
     );
 export const updateSongPlaylist = (obj) =>

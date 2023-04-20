@@ -37,37 +37,44 @@ const ArtistController = (app) => {
     }
 
     const findSongsByArtistApiId = async (req, res) => {
-        const songs = await songDao.findSongsByApiArtistId(req.params.api);
-        const artist = await artistDao.findArtistByArtistId(req.params.api);
-        console.log(artist);
+      const songs = await songDao.findSongsByApiArtistId(req.params.api);
+      const artist = await artistDao.findArtistByArtistId(req.params.api);
+      console.log(artist);
 
-        res.json({
-            playlist: {
-                songs: songs,
-                user: "None",
-            },
-            artist: artist
-        });
-    }
+      res.json({
+        playlist: {
+          songs: songs,
+          user: "None",
+        },
+        artist: artist,
+      });
+    };
 
     const createArtist = async (req, res) => {
-        const artist = await artistDao.createArtist(req.body);
-        res.json(artist);
-    }
+      const artist = await artistDao.createArtist(req.body);
+      res.json(artist);
+    };
     const deleteArtistById = async (req, res) => {
-        const artistIdToDelete = req.params._id;
-        const status = await artistDao.deleteArtist(artistIdToDelete);
-        res.json(status);
-    }
+      const artistIdToDelete = req.params._id;
+      const status = await artistDao.deleteArtist(artistIdToDelete);
+      res.json(status);
+    };
 
-    app.get('/api/artists', findArtists);
+    const insertArtistIfNotExist = async (req, res) => {
+      const status = await artistDao.insertArtistIfNotExist(req.body);
+      const artist = await artistDao.findArtistByArtistId(req.body.api);
+      res.json(artist);
+    };
+
+    app.get("/api/artists", findArtists);
     app.post("/api/artists", createArtist);
-    app.get('/api/artists/searchByName/:name', findArtistByName);
-    app.get('/api/artists/details/:name', findDetailsByArtist);
-    app.get('/api/artists/:_id', findArtistById);
-    app.get('/api/artist/detailsPlayList/:name', findPlayListByArtistName);
-    app.get('/api/artist/artistSongs/:api', findSongsByArtistApiId)
-    app.delete('/api/artists/admin/:_id', deleteArtistById);
+    app.get("/api/artists/searchByName/:name", findArtistByName);
+    app.get("/api/artists/details/:name", findDetailsByArtist);
+    app.get("/api/artists/:_id", findArtistById);
+    app.get("/api/artist/detailsPlayList/:name", findPlayListByArtistName);
+    app.get("/api/artist/artistSongs/:api", findSongsByArtistApiId);
+    app.delete("/api/artists/admin/:_id", deleteArtistById);
+    app.put("/api/artists", insertArtistIfNotExist);
 }
 
 export default ArtistController;
