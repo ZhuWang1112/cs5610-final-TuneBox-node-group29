@@ -19,12 +19,12 @@ export const findUserByName = (userName) =>
 export const findUserById = (id) => userModel.findOne({ _id: id });
 export const findUserByIds = (ids) => userModel.find({ _id: { $in: ids } });
 export const findUserByUsername = async (userName) => {
-    const user = await userModel.findOne({ userName });
+    const user = await userModel.findOne({ userName:userName });
     return user;
 };
 
-export const findUserByCredentials = async ({username, password}) => {
-    const user = await userModel.findOne({ username, password });
+export const findUserByCredentials = async ({userName, password}) => {
+    const user = await userModel.findOne({ userName:userName, password:password });
     return user;
 };
 export const findAllUsers = () => userModel.find();

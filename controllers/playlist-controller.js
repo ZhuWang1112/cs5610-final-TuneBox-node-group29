@@ -3,6 +3,7 @@ import * as songDao from "../dao/song-dao.js";
 import * as userDao from "../dao/user-dao.js";
 import * as songPlaylistDao from "../dao/songPlaylist-dao.js";
 import checkAdmin from "../middleWare/checkAdmin.js";
+import * as artistDao from "../dao/artist-dao.js";
 
 // create a playlist
 const createPlaylist = async (req, res) => {
@@ -148,6 +149,9 @@ const findDefaultPlaylistByUser = async (req, res) => {
   res.json(playlists[0]);
 };
 
+
+
+
 // const checkSongs = async (req, res) => {
 //   const { loginUser, playlist } = req.params;
 //   console.log("loginUser: ", loginUser === "null");
@@ -177,6 +181,17 @@ const findDefaultPlaylistByUser = async (req, res) => {
 // };
 
 export default (app) => {
+
+  const findPlaylistByName = async (req, res) => {
+    const searchObj = req.body;
+    const foundPlaylists = await playlistDao.findPlaylistByName(searchObj);
+    if (foundPlaylists) {
+      res.json(foundPlaylists);
+    } else {
+      res.sendStatus(404);
+    }
+  };
+
   app.get("/api/playlists/admin/count", checkAdmin, countPlaylists);
   app.get("/api/playlists/admin/lastpage", checkAdmin, findLatestPlaylists);
   app.get(
@@ -195,4 +210,6 @@ export default (app) => {
   app.delete("/api/playlists", deletePlaylist);
   app.post("/api/playlists", createPlaylist);
   app.put("/api/playlists/:pid", updatePlaylist);
+
+  app.post("/api/playlists", findPlaylistByName);
 };

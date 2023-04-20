@@ -1,8 +1,5 @@
 import * as userDao from "../dao/user-dao.js"
 import alert from 'alert'
-// import { createEmptyLikedList } from "./like-controller.js"
-import { createEmptyFolloweeList } from "./follow-controller.js"
-import * as followDao from "../dao/follow-dao.js";
 import checkAdmin from "../middleWare/checkAdmin.js";
 
 const UserController = (app) => {
@@ -41,8 +38,7 @@ const UserController = (app) => {
 
     const login = async (req, res) => {
       const user = req.body;
-      // console.log(user);
-      const foundUser = await userDao.findUserByCredentials(req.body);
+      const foundUser = await userDao.findUserByCredentials(user);
       // console.log(foundUser);
       if (foundUser) {
         req.session["currentUser"] = foundUser;
@@ -52,6 +48,7 @@ const UserController = (app) => {
         res.sendStatus(404);
       }
     };
+
     const logout = async (req, res) => {
       req.session.destroy();
       res.sendStatus(204);
