@@ -38,3 +38,9 @@ export const createArtist = async (artist) => {
 };
 
 export const deleteArtist = (artist) => artistModel.deleteOne({ _id: artist });
+export const insertArtistIfNotExist = (artist) =>
+  artistModel.updateOne(
+    { api: artist.api },
+    { $set: artist },
+    { upsert: true }
+  );
