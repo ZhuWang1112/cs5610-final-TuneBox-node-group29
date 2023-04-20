@@ -39,13 +39,9 @@ const ArtistController = (app) => {
     const findSongsByArtistApiId = async (req, res) => {
       const songs = await songDao.findSongsByApiArtistId(req.params.api);
       const artist = await artistDao.findArtistByArtistId(req.params.api);
-      console.log(artist);
 
       res.json({
-        playlist: {
-          songs: songs,
-          user: "None",
-        },
+        songs: songs,
         artist: artist,
       });
     };
