@@ -20,12 +20,15 @@ const findComments = async (req, res) => {
   const playlists = await playlistDao.findPlaylistByIds(playlistIds);
   const userIds = playlists.map((p) => p.user);
   const artistsOfPlaylists = await userDao.findUserByIds(userIds);
-
+  console.log("all playlists: ", playlists);
+  console.log("all comments:", comments);
   //for each comment, find the playlist details
   const commentsWithDetails = comments.map((c) => {
     const playlistObj = playlists.filter(
       (p) => p._id.toString() == c.playlist.toString()
     )[0];
+    console.log("pid from comment: ", c.playlist.toString());
+    console.log("playlistObj in findComments", playlistObj);
     const pName = playlistObj.playListName;
     const pCover = playlistObj.img;
     const userObj = artistsOfPlaylists.filter(
@@ -59,7 +62,7 @@ const deleteComments = async (req, res) => {
       ((playlistObj.rating * number - commentObj.rating) * 1.0) / (number - 1);
   }
   await playlistDao.updatePlaylist(playlistObj);
-  const status = await commentDao.deleteComment(commentObj._id);
+  const status = await commentDao.deleteComment({ _id: commentObj._id });
   res.json(status);
 };
 
