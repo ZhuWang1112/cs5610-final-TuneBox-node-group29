@@ -27,10 +27,11 @@ const findSongByName = async (req, res) => {
   const searchObj = req.body;
   // console.log("ffffffff: ", searchObj)
   const foundSongs = await songDao.findSongByName(searchObj.name);
+  console.log("foundSongs", foundSongs);
   if (foundSongs) {
     res.json(foundSongs);
   } else {
-    res.sendStatus(404);
+    res.json(null);
   }
 };
 

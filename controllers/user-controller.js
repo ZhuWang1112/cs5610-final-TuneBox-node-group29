@@ -38,6 +38,7 @@ const UserController = (app) => {
 
     const login = async (req, res) => {
       const user = req.body;
+      console.log("user in login", req.body);
       const foundUser = await userDao.findUserByCredentials(user);
       // console.log(foundUser);
       if (foundUser) {

@@ -153,7 +153,8 @@ const findPlaylistByName = async (req, res) => {
   if (foundPlaylists) {
     res.json(foundPlaylists);
   } else {
-    res.sendStatus(404);
+    // res.sendStatus(404);
+    res.json(null);
   }
 };
 

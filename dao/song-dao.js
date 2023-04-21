@@ -35,10 +35,10 @@ export const findSongByName = (name) => {
     // Create a regex pattern for fuzzy matching
     const fuzzyRegex = new RegExp(name.split('').join('.*'), 'i');
 
-    const song = songModel.findOne({
-        songName: {
-            $regex: fuzzyRegex
-        }
+    const song = songModel.find({
+      songName: {
+        $regex: fuzzyRegex,
+      },
     });
 
     return song;
