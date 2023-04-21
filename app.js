@@ -68,11 +68,11 @@ const CONNECTION_STRING = process.env.DB_CONNECTION || 'mongodb://localhost:2701
 mongoose.connect(CONNECTION_STRING);
 
 app.get('/hello', (req, res) => {res.send('Hello World!')})
-app.use((req, res, next) => {
-    console.log("Request cookies:", req.cookies);
-    console.log("Session ID:", req.session.id);
-    next();
-});
+// app.use((req, res, next) => {
+//     console.log("Request cookies:", req.cookies);
+//     console.log("Session ID:", req.session.id);
+//     next();
+// });
 RemoteApiController(app);
 PlaylistController(app);
 UserController(app);

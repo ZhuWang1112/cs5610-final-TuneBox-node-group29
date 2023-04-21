@@ -1,5 +1,5 @@
-import TopMusic from '../TopMusic/TopMusic.json' assert { type: 'json' };
-import TopAlbum from '../TopAlbum/TopAlbum.json' assert { type: 'json' };
+import TopMusic from '../TopArtists/TopArtists.json' assert { type: 'json' };
+import TopAlbum from '../TopAlbums/TopAlbums.json' assert { type: 'json' };
 import * as playlistDao from "../dao/playlist-dao.js";
 import * as userDao from "../dao/user-dao.js";
 import checkVip from "../middleWare/checkVip.js";
