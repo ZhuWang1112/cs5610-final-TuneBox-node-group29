@@ -107,10 +107,10 @@ export const findPlaylistByName = (name) => {
     // Create a regex pattern for fuzzy matching
     const fuzzyRegex = new RegExp(name.split('').join('.*'), 'i');
 
-    const playlist = playlistModel.findOne({
-        playListName: {
-            $regex: fuzzyRegex
-        }
+    const playlist = playlistModel.find({
+      playListName: {
+        $regex: fuzzyRegex,
+      },
     });
 
     return playlist;

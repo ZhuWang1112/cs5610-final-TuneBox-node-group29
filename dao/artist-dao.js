@@ -15,10 +15,10 @@ export const findDAOLocalArtistByName = (name) => {
     // Create a regex pattern for fuzzy matching
     const fuzzyRegex = new RegExp(name.split('').join('.*'), 'i');
 
-    const artist = artistModel.findOne({
-        name: {
-            $regex: fuzzyRegex
-        }
+    const artist = artistModel.find({
+      name: {
+        $regex: fuzzyRegex,
+      },
     });
 
     return artist;

@@ -28,8 +28,7 @@ const ArtistController = (app) => {
         if (foundArtists) {
             res.json(foundArtists);
         } else {
-            res.sendStatus(404);
-            // res.json(null);
+          res.json(null);
         }
     }
     const findDetailsByArtist = async (req, res) => {
