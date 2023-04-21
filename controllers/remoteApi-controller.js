@@ -119,7 +119,7 @@ const getArtistInfoByArtistId = async (req,res) => {
     const artistInfo = {
         artistName: response.data.data.artist.profile.name,
         img: response.data.data.artist.visuals.avatarImage.sources[0].url,
-        bannerImg: response.data.data.artist.visuals.headerImage.sources[0].url,
+        bannerImg: response.data.data.artist.visuals.headerImage ? response.data.data.artist.visuals.headerImage.sources[0].url : null,
     }
     res.json(artistInfo);
 }
