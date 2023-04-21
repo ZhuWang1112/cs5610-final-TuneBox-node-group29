@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const key0 = '6ff24f57efmshbf038dd3fa89810p1cf523jsn233a6ee00de2';
+const key0 = 'c7b52506acmshb5507c2e9ba0359p1f9b53jsn7116ade98629';
 
 // ms to "minutes : seconds"
 function formatTime(ms) {
@@ -105,6 +105,42 @@ const getTracksByAlbumId = async (req,res) => {
     res.json(tracks);
 }
 
+const getArtistInfoByArtistId = async (req,res) => {
+    const options = {       // Artists/Artist overview
+        method: 'GET',
+        url: 'https://spotify23.p.rapidapi.com/artist_overview/',
+        params: {id: req.params.apiArtistId},
+        headers: {
+            'X-RapidAPI-Key': key0,
+            'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
+        }
+    };
+    const response = await axios.request(options);
+    const artistInfo = {
+        artistName: response.data.data.artist.profile.name,
+        img: response.data.data.artist.visuals.avatarImage.sources[0].url,
+        bannerImg: response.data.data.artist.visuals.headerImage.sources[0].url,
+    }
+    res.json(artistInfo);
+}
+
+const getAlbumInfoByAlbumId = async (req,res) => {
+    const options = {
+        method: 'GET',
+        url: 'https://spotify23.p.rapidapi.com/album_metadata/',
+        params: {id: req.params.apiAlbumId},
+        headers: {
+            'X-RapidAPI-Key': key0,
+            'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
+        }
+    };
+    const response = await axios.request(options);
+    const albumInfo = {
+        albumName: response.data.data.album.name,
+    }
+    res.json(albumInfo);
+}
+
 export default (app) => {
     // get Track
     app.get("/api/remoteApi/songs/:apiSongId", getTrack);
@@ -112,4 +148,8 @@ export default (app) => {
     app.get("/api/remoteApi/albums/:apiArtistId", getAlbumsByArtistId);
     // get Tracks
     app.get("/api/remoteApi/tracks/:apiAlbumId", getTracksByAlbumId);
+
+    app.get("/api/remoteApi/artistInfo/:apiArtistId", getArtistInfoByArtistId);
+    app.get("/api/remoteApi/albumInfo/:apiAlbumId", getAlbumInfoByAlbumId);
+
 }
