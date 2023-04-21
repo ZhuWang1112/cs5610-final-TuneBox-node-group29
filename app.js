@@ -53,6 +53,19 @@ process.on('uncaughtException', (error) => {
     }, 10000).unref(); // unref() to allow the program to exit if this is the only active handle.
 });
 
+// detect memory usage
+// setInterval(() => {
+//     const memoryUsage = process.memoryUsage();
+//     const memoryUsageMB = {
+//         rss: (memoryUsage.rss / (1024 * 1024)).toFixed(2),
+//         heapTotal: (memoryUsage.heapTotal / (1024 * 1024)).toFixed(2),
+//         heapUsed: (memoryUsage.heapUsed / (1024 * 1024)).toFixed(2),
+//         external: (memoryUsage.external / (1024 * 1024)).toFixed(2),
+//         arrayBuffers: (memoryUsage.arrayBuffers / (1024 * 1024)).toFixed(2),
+//     };
+//     console.log('Memory usage (MB):', memoryUsageMB);
+// }, 5000); // every 5 seconds
+
 app.use(cookieParser());
 app.use(
     session({
