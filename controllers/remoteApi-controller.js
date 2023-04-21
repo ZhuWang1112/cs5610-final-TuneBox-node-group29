@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const key0 = 'c7b52506acmshb5507c2e9ba0359p1f9b53jsn7116ade98629';
+const key0 = 'a36c07483emsh864414f2c3799b9p1943ffjsn02dd06330afc';
 
 // ms to "minutes : seconds"
 function formatTime(ms) {
@@ -8,19 +8,19 @@ function formatTime(ms) {
     let seconds = ((ms % 60000) / 1000).toFixed(0);
     return minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
 }
-const getTrack = async (req,res) => {
-    const options = {           // tracks/Get tracks
-        method: 'GET',
-        url: 'https://spotify23.p.rapidapi.com/tracks/',
-        params: {ids: req.params.apiSongId},
-        headers: {
-            'X-RapidAPI-Key': key0,
-            'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
-        }
-    };
-    const response = await axios.request(options);
-    res.json(response.data);
-}
+// const getTrack = async (req,res) => {
+//     const options = {           // tracks/Get tracks
+//         method: 'GET',
+//         url: 'https://spotify23.p.rapidapi.com/tracks/',
+//         params: {ids: req.params.apiSongId},
+//         headers: {
+//             'X-RapidAPI-Key': key0,
+//             'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
+//         }
+//     };
+//     const response = await axios.request(options);
+//     res.json(response.data);
+// }
 
 const getAlbumsByArtistId = async (req,res) => {
     const options = {           // Artists/Artist albums
@@ -95,7 +95,7 @@ const getTracksByAlbumId = async (req,res) => {
         tracks[i] = {
             apiSongId: response.data.albums[0].tracks.items[i].id,
             mp3Url: response.data.albums[0].tracks.items[i].preview_url,
-            artist: response.data.albums[0].tracks.items[i].artists[0].name,
+            artistName: response.data.albums[0].tracks.items[i].artists[0].name,
             apiArtistId: response.data.albums[0].tracks.items[i].artists[0].id,
             songName: response.data.albums[0].tracks.items[i].name,
             duration: formatTime(response.data.albums[0].tracks.items[i].duration_ms),
@@ -143,7 +143,7 @@ const getAlbumInfoByAlbumId = async (req,res) => {
 
 export default (app) => {
     // get Track
-    app.get("/api/remoteApi/songs/:apiSongId", getTrack);
+    // app.get("/api/remoteApi/songs/:apiSongId", getTrack);
     // get Albums
     app.get("/api/remoteApi/albums/:apiArtistId", getAlbumsByArtistId);
     // get Tracks
