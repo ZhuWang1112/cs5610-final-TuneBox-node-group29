@@ -22,19 +22,24 @@ function formatTime(ms) {
     let seconds = ((ms % 60000) / 1000).toFixed(0);
     return minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
 }
-// const getTrack = async (req,res) => {
-//     const options = {           // tracks/Get tracks
-//         method: 'GET',
-//         url: 'https://spotify23.p.rapidapi.com/tracks/',
-//         params: {ids: req.params.apiSongId},
-//         headers: {
-//             'X-RapidAPI-Key': key0,
-//             'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
-//         }
-//     };
-//     const response = await axios.request(options);
-//     res.json(response.data);
-// }
+const getTrack = async (req,res) => {
+    const key = `track:${req.params.apiSongId}`;
+    const requestFunc = async () => {
+        const options = {           // tracks/Get tracks
+            method: 'GET',
+            url: 'https://spotify23.p.rapidapi.com/tracks/',
+            params: {ids: req.params.apiSongId},
+            headers: {
+                'X-RapidAPI-Key': apiKey,
+                'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
+            }
+        };
+        const response = await axios.request(options);
+        res.json(response.data);
+    };
+    const track = await cacheRequest(key, requestFunc);
+    res.json(track);
+}
 
 const getAlbumsByArtistId = async (req,res) => {
     const key = `albums:${req.params.apiArtistId}`;
@@ -177,7 +182,7 @@ const getAlbumInfoByAlbumId = async (req,res) => {
 
 export default (app) => {
     // get Track
-    // app.get("/api/remoteApi/songs/:apiSongId", getTrack);
+    app.get("/api/remoteApi/songs/:apiSongId", getTrack);
     // get Albums
     app.get("/api/remoteApi/albums/:apiArtistId", getAlbumsByArtistId);
     // get Tracks
