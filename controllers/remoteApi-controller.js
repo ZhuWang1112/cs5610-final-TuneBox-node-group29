@@ -14,7 +14,7 @@ const cacheRequest = async (key, requestFunc) => {
     }
 };
 
-const apiKey = 'a36c07483emsh864414f2c3799b9p1943ffjsn02dd06330afc';
+const apiKey = '47442ef149msh569cea63f301f5cp185dc0jsndfa5d96b7f96';
 
 // ms to "minutes : seconds"
 function formatTime(ms) {
