@@ -14,7 +14,7 @@ const cacheRequest = async (key, requestFunc) => {
     }
 };
 
-const apiKey = '47442ef149msh569cea63f301f5cp185dc0jsndfa5d96b7f96';
+const apiKey = '1ac1e8b9b6msh3bfb445be8a917ap1293ccjsn9d817918a22d';
 
 // ms to "minutes : seconds"
 function formatTime(ms) {
@@ -35,9 +35,10 @@ const getTrack = async (req,res) => {
             }
         };
         const response = await axios.request(options);
-        res.json(response.data);
+        return response.data;
     };
     const track = await cacheRequest(key, requestFunc);
+
     res.json(track);
 }
 

@@ -106,7 +106,10 @@ const UserController = (app) => {
       const count = await userDao.countUsers();
       res.json(count);
     };
-
+    const countAllUsers = async (req, res) => {
+        const count = await userDao.countAllUsers();
+        res.json(count);
+    };
     const countVipUsers = async (req, res) => {
       const count = await userDao.countVipUsers();
       res.json(count);
@@ -138,6 +141,7 @@ const UserController = (app) => {
     );
     app.get("/api/users/admin/pagination", checkAdmin, findUsersPagination);
     app.get("/api/users/admin/count", checkAdmin, countUsers);
+    app.get("/api/users/admin/count/all", checkAdmin, countAllUsers);
     app.get("/api/users/admin/vip/count", checkAdmin, countVipUsers);
     app.get("/api/users/admin/female/count", checkAdmin, countFemaleUsers);
     app.get("/api/users/admin/male/count", checkAdmin, countMaleUsers);

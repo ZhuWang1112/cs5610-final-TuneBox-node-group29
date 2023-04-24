@@ -2,6 +2,8 @@ import userModel from "./models/user-model.js";
 import followsModel from "./models/follows-model.js";
 import mongoose from "mongoose";
 
+export const countAllUsers = () => userModel.countDocuments();
+
 // paginate query
 export const findUsersPagination = (page, limit) => {
     const skipIndex = (page - 1) * limit;
@@ -24,7 +26,7 @@ export const findUserByUsername = async (userName) => {
 };
 
 export const findUserByCredentials = async ({userName, password}) => {
-    const user = await userModel.findOne({ userName:userName, password:password });
+    const user = await userModel.findOne({ userName:userName, password:password, isDeleted: false });
     return user;
 };
 export const findAllUsers = () => userModel.find();
