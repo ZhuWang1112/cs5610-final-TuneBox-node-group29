@@ -24,7 +24,7 @@ export const findUserByUsername = async (userName) => {
 };
 
 export const findUserByCredentials = async ({userName, password}) => {
-    const user = await userModel.findOne({ userName:userName, password:password });
+    const user = await userModel.findOne({ userName:userName, password:password, isDeleted: false });
     return user;
 };
 export const findAllUsers = () => userModel.find();
