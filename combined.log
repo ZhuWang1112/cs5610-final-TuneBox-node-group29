@@ -200,3 +200,2189 @@
 {"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
 {"level":"info","message":"POST /api/users/logout","service":"my-app"}
 {"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/users/login","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/login","service":"my-app"}
+{"level":"info","message":"200 OK; 435b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlistsdefault/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/users/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"200 OK; 2b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 4b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 1733b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"200 OK; 1606b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/users/login","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/login","service":"my-app"}
+{"level":"info","message":"200 OK; 435b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlistsdefault/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"200 OK; 435b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 1113b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 1310b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 766b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/remoteApi/albums/7jVv8c5Fj3E9VhNjxT4snq","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"GET /api/remoteApi/artistInfo/7jVv8c5Fj3E9VhNjxT4snq","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/remoteApi/albums/7jVv8c5Fj3E9VhNjxT4snq","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 4b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/remoteApi/artistInfo/7jVv8c5Fj3E9VhNjxT4snq","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 2b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 1733b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"200 OK; 1606b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/users/login","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/login","service":"my-app"}
+{"level":"info","message":"200 OK; 435b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlistsdefault/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 1113b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"200 OK; 1310b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 435b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"200 OK; 766b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/users/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/users/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/follows/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/playlists/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/comment/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/follows/6431a5c4bb47de9fc466b58c/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/follows/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlists/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/comment/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/follows/6431a5c4bb47de9fc466b58c/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/logout","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"200 OK; 4b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 2b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 1733b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"200 OK; 1606b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/users/login","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/login","service":"my-app"}
+{"level":"info","message":"200 OK; 435b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlistsdefault/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"200 OK; 435b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 1310b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 1113b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 766b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/logout","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"200 OK; 4b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"200 OK; 2b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-playlists","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-playlists","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-playlists","service":"my-app"}
+{"level":"info","message":"POST /api/local-playlists","service":"my-app"}
+{"level":"info","message":"200 OK; 2b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 2b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-playlists","service":"my-app"}
+{"level":"info","message":"200 OK; 2b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-playlists","service":"my-app"}
+{"level":"info","message":"200 OK; 4308b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-playlists","service":"my-app"}
+{"level":"info","message":"200 OK; 2b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 1733b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"200 OK; 1606b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/users/login","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/login","service":"my-app"}
+{"level":"info","message":"200 OK; 435b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlistsdefault/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"200 OK; 435b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 1310b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 1113b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 766b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/logout","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"200 OK; 2b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 4b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/users/login","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/login","service":"my-app"}
+{"level":"info","message":"200 OK; 435b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlistsdefault/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 435b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"200 OK; 766b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/logout","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/users/login","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/login","service":"my-app"}
+{"level":"info","message":"200 OK; 4b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/users/login","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/login","service":"my-app"}
+{"level":"info","message":"200 OK; 449b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlistsdefault/6440e388f9a8bf69ebcea730","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"200 OK; 449b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 2b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 1770b sent","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"200 OK; 3267b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/logout","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"200 OK; 4b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/users/login","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/login","service":"my-app"}
+{"level":"info","message":"200 OK; 435b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlistsdefault/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"200 OK; 435b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 2496b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"200 OK; 1310b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 766b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/users/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/follows/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/playlists/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/comment/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/follows/6431a5c4bb47de9fc466b58c/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/follows/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlists/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/comment/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/follows/6431a5c4bb47de9fc466b58c/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/logout","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"200 OK; 4b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"200 OK; 2b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/users/login","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/login","service":"my-app"}
+{"level":"info","message":"200 OK; 435b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlistsdefault/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"200 OK; 435b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"200 OK; 766b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/users/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/follows/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/playlists/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/comment/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/follows/6431a5c4bb47de9fc466b58c/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlists/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/follows/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/comment/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/follows/6431a5c4bb47de9fc466b58c/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/users/login","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/login","service":"my-app"}
+{"level":"info","message":"200 OK; 449b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlistsdefault/6440e388f9a8bf69ebcea730","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 449b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 2b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 1770b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 3267b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/users/login","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/login","service":"my-app"}
+{"level":"info","message":"200 OK; 435b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlistsdefault/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"200 OK; 435b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 2496b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 1310b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"200 OK; 766b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-playlists","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-playlists","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-playlists","service":"my-app"}
+{"level":"info","message":"POST /api/local-playlists","service":"my-app"}
+{"level":"info","message":"200 OK; 2b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 2b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-artists","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-artists","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"POST /api/local-artists","service":"my-app"}
+{"level":"info","message":"POST /api/local-artists","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"200 OK; 2b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 2b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-songs","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-songs","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"200 OK; 772b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 772b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/users/login","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/login","service":"my-app"}
+{"level":"info","message":"200 OK; 435b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlistsdefault/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/users/login","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/login","service":"my-app"}
+{"level":"info","message":"200 OK; 435b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlistsdefault/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-songs","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-songs","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"200 OK; 772b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 772b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/users/login","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/login","service":"my-app"}
+{"level":"info","message":"200 OK; 435b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlistsdefault/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-songs","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-songs","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"200 OK; 772b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 772b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/users/login","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/login","service":"my-app"}
+{"level":"info","message":"200 OK; 435b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlistsdefault/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-songs","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-songs","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"200 OK; 772b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 772b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/users/login","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/login","service":"my-app"}
+{"level":"info","message":"200 OK; 435b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlistsdefault/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-playlists","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-playlists","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-playlists","service":"my-app"}
+{"level":"info","message":"POST /api/local-playlists","service":"my-app"}
+{"level":"info","message":"200 OK; 4308b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 4308b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-artists","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-artists","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-artists","service":"my-app"}
+{"level":"info","message":"POST /api/local-artists","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"200 OK; 989b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 989b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-artists","service":"my-app"}
+{"level":"info","message":"200 OK; 989b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-artists","service":"my-app"}
+{"level":"info","message":"200 OK; 329b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-artists","service":"my-app"}
+{"level":"info","message":"200 OK; 2b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-artists","service":"my-app"}
+{"level":"info","message":"200 OK; 2b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-artists","service":"my-app"}
+{"level":"info","message":"200 OK; 2b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-songs","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-songs","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"200 OK; 772b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 772b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/users/login","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/login","service":"my-app"}
+{"level":"info","message":"200 OK; 435b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlistsdefault/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-songs","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-songs","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"200 OK; 4601b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 4601b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-artists","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-artists","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-artists","service":"my-app"}
+{"level":"info","message":"POST /api/local-artists","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"200 OK; 989b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 989b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"200 OK; 4601b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 4601b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"200 OK; 4601b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"200 OK; 2b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"200 OK; 4601b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"200 OK; 4601b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"200 OK; 1950b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"200 OK; 772b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"200 OK; 772b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-songs","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"200 OK; 772b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"200 OK; 772b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"200 OK; 772b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/users/login","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/login","service":"my-app"}
+{"level":"info","message":"200 OK; 435b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlistsdefault/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-songs","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-songs","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"200 OK; 4601b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 4601b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-artists","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-artists","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"POST /api/local-artists","service":"my-app"}
+{"level":"info","message":"POST /api/local-artists","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"200 OK; 989b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 989b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-songs","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-songs","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"200 OK; 4601b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 4601b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-songs","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"200 OK; 4601b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-artists","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-artists","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-artists","service":"my-app"}
+{"level":"info","message":"POST /api/local-artists","service":"my-app"}
+{"level":"info","message":"200 OK; 2b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 2b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"200 OK; 1196b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 1196b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/logout","service":"my-app"}
+{"level":"info","message":"200 OK; 12b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/users/login","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/login","service":"my-app"}
+{"level":"info","message":"200 OK; 435b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlistsdefault/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-songs","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-songs","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"200 OK; 1196b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 1196b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-artists","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-artists","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"POST /api/local-artists","service":"my-app"}
+{"level":"info","message":"POST /api/local-artists","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"200 OK; 2b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 2b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"200 OK; 1196b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 1196b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/logout","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/users/login","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/login","service":"my-app"}
+{"level":"info","message":"200 OK; 435b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlistsdefault/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/logout","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/users/login","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/login","service":"my-app"}
+{"level":"info","message":"200 OK; 435b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlistsdefault/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-songs","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-songs","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"200 OK; 4601b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 4601b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/logout","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-songs","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-songs","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"200 OK; 4b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"200 OK; 2b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"200 OK; 4601b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 4601b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/users/login","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/login","service":"my-app"}
+{"level":"info","message":"200 OK; 435b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlistsdefault/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"200 OK; 435b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 766b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-songs","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"200 OK; 4601b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 4601b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"200 OK; 4601b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"200 OK; 1950b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"200 OK; 772b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"200 OK; 772b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/logout","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/users/login","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/login","service":"my-app"}
+{"level":"info","message":"200 OK; 435b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlistsdefault/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"GET /api/users/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/follows/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/playlists/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/comment/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/follows/6431a5c4bb47de9fc466b58c/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/follows/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlists/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/follows/6431a5c4bb47de9fc466b58c/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/comment/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-songs","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-songs","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"200 OK; 4601b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 4601b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/logout","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/users/login","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/login","service":"my-app"}
+{"level":"info","message":"200 OK; 449b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlistsdefault/6440e388f9a8bf69ebcea730","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"200 OK; 449b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 2b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 1770b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 3267b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/logout","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/users/login","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/login","service":"my-app"}
+{"level":"info","message":"200 OK; 4b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/login","service":"my-app"}
+{"level":"info","message":"200 OK; 435b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlistsdefault/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"200 OK; 435b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 1310b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 2496b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 766b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/users/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/follows/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/playlists/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/comment/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/follows/6431a5c4bb47de9fc466b58c/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/follows/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlists/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/comment/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/follows/6431a5c4bb47de9fc466b58c/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-artists","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-artists","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-artists","service":"my-app"}
+{"level":"info","message":"POST /api/local-artists","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"200 OK; 989b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 989b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-artists","service":"my-app"}
+{"level":"info","message":"200 OK; 989b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-artists","service":"my-app"}
+{"level":"info","message":"200 OK; 329b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-artists","service":"my-app"}
+{"level":"info","message":"200 OK; 2b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-artists","service":"my-app"}
+{"level":"info","message":"200 OK; 2b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-artists","service":"my-app"}
+{"level":"info","message":"200 OK; 2b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-songs","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-songs","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"POST /api/local-songs","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"200 OK; 772b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 772b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/logout","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/users/login","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/login","service":"my-app"}
+{"level":"info","message":"200 OK; 449b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlistsdefault/6440e388f9a8bf69ebcea730","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 2b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"200 OK; 449b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 1770b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 3267b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"401 Unauthorized; 60b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-playlists","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/local-playlists","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/local-playlists","service":"my-app"}
+{"level":"info","message":"POST /api/local-playlists","service":"my-app"}
+{"level":"info","message":"200 OK; 4308b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 4308b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/logout","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"OPTIONS /api/users/login","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/login","service":"my-app"}
+{"level":"info","message":"200 OK; 435b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlistsdefault/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topmusic","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topalbum","service":"my-app"}
+{"level":"info","message":"200 OK; 435b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 766b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"200 OK; 2496b sent","service":"my-app"}
+{"level":"info","message":"200 OK; 1310b sent","service":"my-app"}
+{"level":"info","message":"GET /api/home/topusers","service":"my-app"}
+{"level":"info","message":"GET /api/home/topplaylists","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/users/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/follows/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/playlists/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/comment/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/follows/6431a5c4bb47de9fc466b58c/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/follows/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlists/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/comment/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/follows/6431a5c4bb47de9fc466b58c/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/playlists/details/64323196167fe466c99b90c3","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlists/details/64323196167fe466c99b90c3","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist/64323196167fe466c99b90c3","service":"my-app"}
+{"level":"info","message":"GET /api/playlists/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlists/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist/songNumber/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"200 OK; 1022b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist/64323196167fe466c99b90c3","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist/songNumber/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/comment/playlist/64323196167fe466c99b90c3","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/comment/playlist/64323196167fe466c99b90c3","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"GET /api/users/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/currentUser","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/users/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/follows/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/playlists/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/comment/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/follows/6431a5c4bb47de9fc466b58c/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/songPlaylist","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/follows/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/playlists/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"GET /api/comment/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"GET /api/follows/6431a5c4bb47de9fc466b58c/6431a5c4bb47de9fc466b58c","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"304 Not Modified; 0b sent","service":"my-app"}
+{"level":"info","message":"POST /api/users/logout","service":"my-app"}
+{"level":"info","message":"204 No Content; 0b sent","service":"my-app"}
