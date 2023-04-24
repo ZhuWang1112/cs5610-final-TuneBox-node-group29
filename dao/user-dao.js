@@ -2,6 +2,8 @@ import userModel from "./models/user-model.js";
 import followsModel from "./models/follows-model.js";
 import mongoose from "mongoose";
 
+export const countAllUsers = () => userModel.countDocuments();
+
 // paginate query
 export const findUsersPagination = (page, limit) => {
     const skipIndex = (page - 1) * limit;
