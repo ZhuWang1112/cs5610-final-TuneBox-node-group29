@@ -60,7 +60,7 @@ const UserController = (app) => {
       const foundUser = await userDao.findUserByUsername(user.userName);
       if (foundUser) {
         res.sendStatus(409);
-        alert("userName already exist!");
+        // alert("userName already exist!");
         return;
       }
       const newUser = await userDao.createUser(user);
