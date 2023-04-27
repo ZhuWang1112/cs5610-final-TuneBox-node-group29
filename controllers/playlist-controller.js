@@ -197,7 +197,7 @@ export default (app) => {
     checkAdmin,
     findPlaylistsPagination
   );
-  app.delete("/api/playlists/admin/:pid", checkAdmin, deletePlaylist);
+  app.delete("/api/playlists/admin", checkAdmin, deletePlaylist);
 
   app.get("/api/playlists", findPlaylists);
   app.get("/api/playlists/:user", findPlaylistByUser);
