@@ -1,4 +1,7 @@
 import axios from "axios";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const cache = new Map();
 
@@ -14,7 +17,8 @@ const cacheRequest = async (key, requestFunc) => {
     }
 };
 
-const apiKey = 'dc311bd25dmshc09f7a2a7c55b75p166c09jsnaf5f5287a4e0';
+// const apiKey = 'dc311bd25dmshc09f7a2a7c55b75p166c09jsnaf5f5287a4e0';
+const apiKey = process.env.API_KEY;
 
 // ms to "minutes : seconds"
 function formatTime(ms) {

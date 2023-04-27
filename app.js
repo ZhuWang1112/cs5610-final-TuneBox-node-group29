@@ -24,66 +24,66 @@ const app = express();
 // log requests
 // app.use(morgan("dev"));
 
-const logger = winston.createLogger({
-    level: 'info',
-    format: winston.format.json(),
-    defaultMeta: { service: 'my-app' },
-    transports: [
-        new winston.transports.File({ filename: 'error.log', level: 'error' }),
-        new winston.transports.File({ filename: 'combined.log' })
-    ]
-});
+// const logger = winston.createLogger({
+//     level: 'info',
+//     format: winston.format.json(),
+//     defaultMeta: { service: 'my-app' },
+//     transports: [
+//         new winston.transports.File({ filename: 'error.log', level: 'error' }),
+//         new winston.transports.File({ filename: 'combined.log' })
+//     ]
+// });
 
 
 // log requests
-app.use((req, res, next) => {
-    logger.info(`${req.method} ${req.url}`);
-    res.on('finish', () => {
-        logger.info(`${res.statusCode} ${res.statusMessage}; ${res.get('Content-Length') || 0}b sent`);
-    });
-    next();
-});
+// app.use((req, res, next) => {
+//     logger.info(`${req.method} ${req.url}`);
+//     res.on('finish', () => {
+//         logger.info(`${res.statusCode} ${res.statusMessage}; ${res.get('Content-Length') || 0}b sent`);
+//     });
+//     next();
+// });
 
 // log uncaught exceptions
-process.on('uncaughtException', (error) => {
-    logger.error('An unhandled exception was caught:', error);
-    process.exit(1);
-});
+// process.on('uncaughtException', (error) => {
+//     logger.error('An unhandled exception was caught:', error);
+//     process.exit(1);
+// });
 
 // log unhandled rejections
-process.on('unhandledRejection', (error) => {
-    logger.error('An unhandled rejection was caught:', error);
-    process.exit(1);
-});
+// process.on('unhandledRejection', (error) => {
+//     logger.error('An unhandled rejection was caught:', error);
+//     process.exit(1);
+// });
 
 app.use(express.json());
 // app.use(cors());
 app.use(
     cors({
         credentials: true,
-        origin: "http://localhost:3000",
+        origin: process.env.CORS || "http://localhost:3000",
     })
 );
 
 
 // catch exceptions
-// process.on('uncaughtException', (error) => {
-//     console.error('An unhandled exception was caught:', error);
-//
-//     //close server
-//     server.close(() => {
-//         console.log('server down');
-//
-//         // quit process
-//         process.exit(1);
-//     });
-//
-//     // force quit after 10 seconds
-//     setTimeout(() => {
-//         console.log('Forcing server down');
-//         process.exit(1);
-//     }, 10000).unref(); // unref() to allow the program to exit if this is the only active handle.
-// });
+process.on('uncaughtException', (error) => {
+    console.error('An unhandled exception was caught:', error);
+
+    //close server
+    server.close(() => {
+        console.log('server down');
+
+        // quit process
+        process.exit(1);
+    });
+
+    // force quit after 10 seconds
+    setTimeout(() => {
+        console.log('Forcing server down');
+        process.exit(1);
+    }, 10000).unref(); // unref() to allow the program to exit if this is the only active handle.
+});
 
 // detect memory usage
 // setInterval(() => {
